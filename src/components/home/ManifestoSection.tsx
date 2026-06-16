@@ -3,14 +3,51 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const values = [
-  { key: 'CLARTÉ', desc: 'Nous disons les choses telles qu\'elles sont.' },
-  { key: 'EXIGENCE', desc: 'Nous visons l\'excellence dans les détails.' },
-  { key: 'SYSTÈME', desc: 'Nous ne comptons pas sur la motivation.' },
-  { key: 'IMPACT', desc: 'Nous construisons pour laisser une empreinte.' },
-];
+type Locale = 'fr' | 'en';
 
-export default function ManifestoSection() {
+const copy = {
+  fr: {
+    label: 'NOTRE MANIFESTE',
+    heading1: 'Moins de bruit.',
+    heading2Gold: 'Plus de système.',
+    body: "Nous croyons qu'un petit nombre d'hommes et de femmes bien structurés peuvent changer leur vie, leur entourage et le monde.",
+    values: [
+      { key: 'CLARTÉ', desc: "Nous disons les choses telles qu'elles sont." },
+      { key: 'EXIGENCE', desc: "Nous visons l'excellence dans les détails." },
+      { key: 'SYSTÈME', desc: 'Nous ne comptons pas sur la motivation.' },
+      { key: 'IMPACT', desc: 'Nous construisons pour laisser une empreinte.' },
+    ],
+    readManifesto: 'Lire le manifeste complet',
+    quote1: 'Ton futur ne se souhaite pas.',
+    quote2: 'Il se',
+    quote2Gold: 'structure.',
+    quoteBody: "Rejoins le MB Système et construis la vie, l'image et la liberté que tu mérites.",
+    cta: 'Découvrir mon MB Score →',
+  },
+  en: {
+    label: 'OUR MANIFESTO',
+    heading1: 'Less noise.',
+    heading2Gold: 'More system.',
+    body: "We believe that a small number of well-structured men and women can change their lives, their circle and the world.",
+    values: [
+      { key: 'CLARITY', desc: 'We say things as they are.' },
+      { key: 'EXCELLENCE', desc: 'We aim for excellence in the details.' },
+      { key: 'SYSTEM', desc: "We don't rely on motivation." },
+      { key: 'IMPACT', desc: 'We build to leave a mark.' },
+    ],
+    readManifesto: 'Read the full manifesto',
+    quote1: 'Your future is not wished for.',
+    quote2: 'It is',
+    quote2Gold: 'structured.',
+    quoteBody: 'Join MB System and build the life, image and freedom you deserve.',
+    cta: 'Discover my MB Score →',
+  },
+};
+
+export default function ManifestoSection({ locale = 'fr' }: { locale?: Locale }) {
+  const t = copy[locale];
+  const base = locale === 'en' ? '/en' : '';
+
   return (
     <section className="py-24 px-6 lg:px-8 relative bg-[#0B0B0B]">
       <div className="divider-gold absolute top-0 left-0 right-0" />
@@ -25,18 +62,15 @@ export default function ManifestoSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <div className="section-label mb-6">NOTRE MANIFESTE</div>
+            <div className="section-label mb-6">{t.label}</div>
             <h2 className="font-serif text-4xl lg:text-5xl font-bold text-cream mb-6 leading-tight">
-              Moins de bruit.<br />
-              <span className="gold-text">Plus de système.</span>
+              {t.heading1}<br />
+              <span className="gold-text">{t.heading2Gold}</span>
             </h2>
-            <p className="text-[#A8A29A] text-base leading-relaxed mb-8">
-              Nous croyons qu&apos;un petit nombre d&apos;hommes et de femmes bien structurés
-              peuvent changer leur vie, leur entourage et le monde.
-            </p>
+            <p className="text-[#A8A29A] text-base leading-relaxed mb-8">{t.body}</p>
 
             <div className="grid grid-cols-2 gap-4">
-              {values.map((v) => (
+              {t.values.map((v) => (
                 <div key={v.key} className="premium-card rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-gold" />
@@ -48,15 +82,14 @@ export default function ManifestoSection() {
             </div>
 
             <Link
-              href="/manifeste"
+              href={`${base}/manifeste`}
               className="inline-flex items-center gap-2 mt-8 text-xs font-body font-semibold text-gold tracking-widest uppercase hover:text-champagne transition-colors"
             >
-              Lire le manifeste complet
+              {t.readManifesto}
               <span>→</span>
             </Link>
           </motion.div>
 
-          {/* Right — quote */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -64,19 +97,17 @@ export default function ManifestoSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <div className="premium-card rounded-2xl p-8">
-              <div className="text-gold text-5xl font-serif leading-none mb-4">"</div>
+              <div className="text-gold text-5xl font-serif leading-none mb-4">&quot;</div>
               <blockquote className="font-serif text-2xl lg:text-3xl text-cream font-bold leading-tight mb-6">
-                Ton futur ne se souhaite pas.
+                {t.quote1}
                 <br />
-                Il se <span className="gold-text">structure.</span>
+                {t.quote2} <span className="gold-text">{t.quote2Gold}</span>
               </blockquote>
               <div className="divider-gold mb-6" />
-              <p className="text-[#A8A29A] text-sm font-body leading-relaxed">
-                Rejoins le MB Système et construis la vie, l&apos;image et la liberté que tu mérites.
-              </p>
+              <p className="text-[#A8A29A] text-sm font-body leading-relaxed">{t.quoteBody}</p>
               <div className="mt-6 flex gap-3">
-                <Link href="/score" className="btn-gold px-6 py-3 rounded-lg text-xs inline-flex items-center gap-2">
-                  Découvrir mon MB Score →
+                <Link href={`${base}/score`} className="btn-gold px-6 py-3 rounded-lg text-xs inline-flex items-center gap-2">
+                  {t.cta}
                 </Link>
               </div>
             </div>

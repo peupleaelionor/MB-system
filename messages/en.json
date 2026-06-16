@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "system": "The System",
+    "score": "MB Score",
+    "offers": "Offers",
+    "manifesto": "Manifesto",
+    "account": "Access my account"
+  },
+  "home": {
+    "label": "MB SYSTEM",
+    "headline1": "You are not out of",
+    "headline1b": "potential.",
+    "headline2": "You are out of",
+    "headline2b": "system.",
+    "subtitle": "The MB System turns your potential, your image and your ideas into a clear, structured and sellable system.",
+    "cta_score": "Discover my MB Score",
+    "cta_system": "See the system",
+    "stat1": "members transformed",
+    "stat2": "Average rating",
+    "stat3": "To change scale",
+    "stat4": "Results-oriented"
+  },
+  "problem": {
+    "title1": "The market does not pay",
+    "title2": "for raw potential.",
+    "body": "You can be intelligent, ambitious, creative, hardworking… and still be financially stuck. Not because you lack value. But because your value is not yet structured into a clear offer.",
+    "quote": "The market doesn't pay for what you could become. It pays for what you can clearly deliver today.",
+    "problems": [
+      "You don't know exactly what to sell.",
+      "Your image doesn't clearly communicate your value.",
+      "Your ideas stay scattered, without structure.",
+      "You have no concrete action plan.",
+      "You want to earn more, but you're moving without a system."
+    ]
+  },
+  "truth": {
+    "headline": "Millionaires don't just think differently.",
+    "headline_gold": "They behave differently.",
+    "body": "MB System doesn't promise to make you a millionaire. It helps you understand and apply builder behaviors: clarity, discipline, offer, image and execution.",
+    "quote": "An unstructured skill stays invisible. Money rarely follows chaos. It follows clarity, value and execution."
+  },
+  "solution": {
+    "label": "THE SOLUTION",
+    "title": "MB System puts everything in order.",
+    "subtitle": "A 5-pillar protocol to transform how you think, how you present yourself and how you create value.",
+    "pillars": [
+      { "key": "BEHAVIOR", "title": "Behaviors & discipline", "desc": "The 30 builder behaviors. Not motivation — concrete reprogramming." },
+      { "key": "CLARITY", "title": "Vision, choices & priorities", "desc": "Precise goals, action plan, 90-day vision. You know where you're going and how to get there." },
+      { "key": "VALUE", "title": "Skill → offer", "desc": "Build an offer the market wants to pay for. Not just an idea — a clear, desirable product or service." },
+      { "key": "IMAGE", "title": "Confidence & perception", "desc": "Profile, bio, positioning. People understand your value in 5 seconds." },
+      { "key": "EXECUTION", "title": "Action, sales & improvement", "desc": "Action plans, templates, scripts. You stop waiting to be ready — you execute and improve." }
+    ]
+  },
+  "score": {
+    "label": "MB SCORE",
+    "title1": "One score.",
+    "title2": "5 pillars.",
+    "title3": "1 clear vision.",
+    "subtitle": "Evaluate where you are. Identify your levers. Take action.",
+    "cta": "Take my free assessment",
+    "pillars": [
+      { "key": "MENTAL", "label": "Mental", "desc": "Mental clarity, confidence and inner discipline." },
+      { "key": "OFFER", "label": "Offer", "desc": "Clear, desirable and premium offer." },
+      { "key": "IMAGE", "label": "Image", "desc": "Positioning, brand and perceived authority." },
+      { "key": "ACTION", "label": "Action", "desc": "Acquisition system, content and conversion." },
+      { "key": "CLARITY", "label": "Money Clarity", "desc": "Financial structure and long-term vision." }
+    ]
+  },
+  "pricing": {
+    "label": "OUR OFFERS",
+    "title1": "Choose your",
+    "title_gold": "level of construction.",
+    "subtitle": "The MB System is a complete journey that transforms your potential into a clear, structured and sellable system.",
+    "starter": {
+      "name": "MB STARTER",
+      "desc": "The essentials to lay the first foundations.",
+      "cta": "Choose Starter",
+      "features": ["MB Score access", "MB mini-guide", "30 Money Builder rules", "Monetizable potential checklist", "7-day plan"]
+    },
+    "core": {
+      "name": "MB CORE",
+      "badge": "The ambitious choice",
+      "desc": "The complete system to shift into high gear.",
+      "cta": "Choose MB Core",
+      "features": ["Everything in Starter", "Full MB manual", "Complete workbook", "100 Money Moves", "Sales scripts", "30-day plan", "Offer templates"]
+    },
+    "pro": {
+      "name": "MB PRO",
+      "desc": "Advanced templates, scripts and tools to accelerate.",
+      "cta": "Choose MB Pro",
+      "features": ["Everything in Core", "Offer generator", "Premium bio generator", "Advanced DM scripts", "30-day content calendar", "MB AI prompts", "Landing page templates"]
+    }
+  },
+  "manifesto": {
+    "label": "OUR MANIFESTO",
+    "title1": "Less noise.",
+    "title_gold": "More system.",
+    "body": "We believe a small number of well-structured men and women can change their lives, their communities and the world.",
+    "values": [
+      { "key": "CLARITY", "desc": "We say things as they are." },
+      { "key": "EXCELLENCE", "desc": "We aim for excellence in every detail." },
+      { "key": "SYSTEM", "desc": "We don't rely on motivation." },
+      { "key": "IMPACT", "desc": "We build to leave a mark." }
+    ],
+    "read_more": "Read the full manifesto",
+    "quote": "Your future is not wished for.",
+    "quote_gold": "It is structured.",
+    "quote_sub": "Join the MB System and build the life, the image and the freedom you deserve."
+  },
+  "faq": {
+    "label": "FREQUENTLY ASKED QUESTIONS",
+    "title": "You have questions. Here are the answers.",
+    "items": [
+      { "q": "Who is MB System for?", "a": "MB System is for ambitious people who want to clarify their potential, create a sellable offer and build a concrete action system. Frustrated employees, freelancers, young entrepreneurs, creators, students, career changers." },
+      { "q": "Does MB System promise to make me rich?", "a": "No. MB System does not promise quick wealth. It provides structure to clarify your potential, create an offer, improve your image and take action. Results depend on your commitment and execution." },
+      { "q": "Is it suitable if I don't have an idea yet?", "a": "Yes. The system is specifically designed to help identify your skills, resources and ideas, then transform them into concrete monetizable paths." },
+      { "q": "What happens after purchase?", "a": "After payment, you immediately receive access to all your content: guides, workbooks, scripts, templates and action plans. Lifetime access, no hidden subscription." },
+      { "q": "Is it suitable if I'm employed?", "a": "Yes. MB System can help an employee clarify their skills, improve their professional image and identify additional income opportunities." },
+      { "q": "Is it suitable for freelancers?", "a": "Yes. Freelancers can use MB System to clarify their offer, improve their positioning and build a stronger professional image." }
+    ]
+  },
+  "library": {
+    "label": "MB LIBRARY",
+    "title": "Premium resources to build with system.",
+    "subtitle": "Guides, workbooks, scripts, prompts and action plans designed to turn your potential into clear, sellable structure.",
+    "cta": "See offers"
+  },
+  "footer": {
+    "tagline": "Build yourself like an asset. The system to adopt the behaviors, clarity and reflexes of builders.",
+    "disclaimer": "MB System does not promise quick wealth. It provides structure to act with clarity.",
+    "nav": "Navigation",
+    "legal": "Legal",
+    "copyright": "© 2026 MB SYSTEM. All rights reserved.",
+    "mb_meaning": "MB = Millionaire Behavior · Money Builder",
+    "links": {
+      "score": "Free MB Score",
+      "system": "The System",
+      "offers": "Offers",
+      "manifesto": "Manifesto",
+      "access": "Access my account"
+    }
+  },
+  "quiz": {
+    "label": "MB SCORE",
+    "title": "Discover your",
+    "title_gold": "Money Builder profile",
+    "subtitle": "Answer honestly. This diagnostic will give you precious clarity on your potential and the levers to activate first.",
+    "progress": "Question {current} of {total}",
+    "progress_pct": "{pct}% complete",
+    "cta": "Continue",
+    "confidential": "Your answers are 100% confidential and used only to generate your personalized diagnostic.",
+    "reminder_title": "REMINDER",
+    "reminder_body": "There are no right or wrong answers. There is only your starting point. This score is here to elevate you, not to judge you.",
+    "pillars_title": "YOUR 5 PILLARS",
+    "footer_left_title": "TAKE YOUR TIME",
+    "footer_left_body": "The accuracy of your MB Score depends on your honesty.",
+    "footer_right_title": "NEED CLARITY?",
+    "footer_right_cta": "SEE THE SYSTEM"
+  },
+  "result": {
+    "label": "YOUR MB SCORE",
+    "profile_label": "Your profile",
+    "score_label": "Global score",
+    "blockers": "Your main blocker",
+    "levers": "Your main lever",
+    "next_step": "Your next step",
+    "cta_starter": "Unlock MB Starter — €29",
+    "cta_core": "Access the full system — €97",
+    "cta_pro": "Go MB Pro — €197",
+    "retake": "Retake the test",
+    "strengths": "Your strengths",
+    "improvements": "What you'll improve"
+  },
+  "access": {
+    "title": "Welcome to MB System.",
+    "subtitle": "Your access is active. Download your resources below.",
+    "download": "Download",
+    "coming_soon": "Coming soon",
+    "note": "Your resources are available immediately. Lifetime access, no subscription."
+  }
+}

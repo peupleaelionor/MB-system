@@ -2,15 +2,40 @@
 
 import { motion } from 'framer-motion';
 
-const problems = [
-  "Tu ne sais pas exactement quoi vendre.",
-  "Ton image ne dit pas clairement ce que tu apportes.",
-  "Tes idées restent dispersées, sans structure.",
-  "Tu n'as pas de plan d'action concret.",
-  "Tu veux gagner plus, mais tu avances sans système.",
-];
+type Locale = 'fr' | 'en';
 
-export default function ProblemSection() {
+const copy = {
+  fr: {
+    heading1: 'Le marché ne paie pas',
+    heading2: 'ton potentiel brut.',
+    body1: "Tu peux être intelligent, ambitieux, créatif, travailleur… et rester bloqué financièrement. Pas parce que tu n'as aucune valeur. Mais parce que ta valeur n'est pas encore structurée en offre claire.",
+    body2: "Le marché ne paie pas ce que tu pourrais devenir. Il paie ce que tu sais clairement apporter aujourd'hui.",
+    problems: [
+      "Tu ne sais pas exactement quoi vendre.",
+      "Ton image ne dit pas clairement ce que tu apportes.",
+      "Tes idées restent dispersées, sans structure.",
+      "Tu n'as pas de plan d'action concret.",
+      "Tu veux gagner plus, mais tu avances sans système.",
+    ],
+  },
+  en: {
+    heading1: "The market doesn't pay",
+    heading2: 'your raw potential.',
+    body1: "You can be smart, ambitious, creative, hard-working… and still be financially stuck. Not because you have no value. But because your value isn't yet structured into a clear offer.",
+    body2: "The market doesn't pay for what you could become. It pays for what you clearly deliver today.",
+    problems: [
+      "You don't know exactly what to sell.",
+      "Your image doesn't clearly communicate what you bring.",
+      "Your ideas remain scattered, without structure.",
+      "You don't have a concrete action plan.",
+      "You want to earn more, but you move forward without a system.",
+    ],
+  },
+};
+
+export default function ProblemSection({ locale = 'fr' }: { locale?: Locale }) {
+  const t = copy[locale];
+
   return (
     <section className="py-24 px-6 lg:px-8 relative">
       <div className="divider-gold absolute top-0 left-0 right-0" />
@@ -24,21 +49,15 @@ export default function ProblemSection() {
             transition={{ duration: 0.7 }}
           >
             <h2 className="font-serif text-4xl lg:text-5xl font-bold text-cream mb-6 leading-tight">
-              Le marché ne paie pas<br />
-              <span className="text-[#A8A29A]">ton potentiel brut.</span>
+              {t.heading1}<br />
+              <span className="text-[#A8A29A]">{t.heading2}</span>
             </h2>
-            <p className="text-[#A8A29A] text-base leading-relaxed mb-8">
-              Tu peux être intelligent, ambitieux, créatif, travailleur… et rester bloqué financièrement.
-              Pas parce que tu n&apos;as aucune valeur. Mais parce que ta valeur n&apos;est pas encore
-              structurée en offre claire.
-            </p>
-            <p className="text-[#A8A29A] text-base leading-relaxed">
-              Le marché ne paie pas ce que tu <em>pourrais</em> devenir. Il paie ce que tu sais clairement apporter aujourd&apos;hui.
-            </p>
+            <p className="text-[#A8A29A] text-base leading-relaxed mb-8">{t.body1}</p>
+            <p className="text-[#A8A29A] text-base leading-relaxed">{t.body2}</p>
           </motion.div>
 
           <div className="flex flex-col gap-3">
-            {problems.map((problem, i) => (
+            {t.problems.map((problem, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: 30 }}

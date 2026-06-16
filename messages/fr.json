@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "system": "Le Système",
+    "score": "MB Score",
+    "offers": "Offres",
+    "manifesto": "Manifeste",
+    "account": "Accéder à mon compte"
+  },
+  "home": {
+    "label": "MB SYSTÈME",
+    "headline1": "Tu n'es pas sans",
+    "headline1b": "potentiel.",
+    "headline2": "Tu es",
+    "headline2b": "sans système.",
+    "subtitle": "Le MB Système transforme ton potentiel, ton image et tes idées en un système clair, structuré et vendable.",
+    "cta_score": "Découvrir mon MB Score",
+    "cta_system": "Voir le système",
+    "stat1": "membres transformés",
+    "stat2": "Note moyenne",
+    "stat3": "Pour changer d'échelle",
+    "stat4": "Orienté résultats"
+  },
+  "problem": {
+    "title1": "Le marché ne paie pas",
+    "title2": "ton potentiel brut.",
+    "body": "Tu peux être intelligent, ambitieux, créatif, travailleur… et rester bloqué financièrement. Pas parce que tu n'as aucune valeur. Mais parce que ta valeur n'est pas encore structurée en offre claire.",
+    "quote": "Le marché ne paie pas ce que tu pourrais devenir. Il paie ce que tu sais clairement apporter aujourd'hui.",
+    "problems": [
+      "Tu ne sais pas exactement quoi vendre.",
+      "Ton image ne dit pas clairement ce que tu apportes.",
+      "Tes idées restent dispersées, sans structure.",
+      "Tu n'as pas de plan d'action concret.",
+      "Tu veux gagner plus, mais tu avances sans système."
+    ]
+  },
+  "truth": {
+    "headline": "Les millionnaires ne pensent pas seulement différemment.",
+    "headline_gold": "Ils se comportent différemment.",
+    "body": "MB Système ne te promet pas de devenir millionnaire. Il t'aide à comprendre et appliquer les comportements des bâtisseurs : clarté, discipline, offre, image et exécution.",
+    "quote": "Une compétence non structurée reste invisible. L'argent suit rarement le chaos. Il suit la clarté, la valeur et l'exécution."
+  },
+  "solution": {
+    "label": "LA SOLUTION",
+    "title": "MB Système remet tout dans l'ordre.",
+    "subtitle": "Un protocole en 5 piliers pour transformer ta façon de penser, de te présenter et de générer de la valeur.",
+    "pillars": [
+      { "key": "BEHAVIOR", "title": "Comportements & discipline", "desc": "Les 30 comportements des bâtisseurs. Pas de la motivation — de la reprogrammation concrète." },
+      { "key": "CLARITY", "title": "Vision, choix & priorités", "desc": "Objectifs précis, plan d'action, vision à 90 jours. Tu sais où tu vas et comment y aller." },
+      { "key": "VALUE", "title": "Compétence → offre", "desc": "Structure une offre que le marché veut payer. Pas une idée — un produit ou service clair et désirable." },
+      { "key": "IMAGE", "title": "Confiance & perception", "desc": "Profil, bio, positionnement. Les gens comprennent en 5 secondes ce que tu vaux." },
+      { "key": "EXECUTION", "title": "Action, vente & amélioration", "desc": "Plans d'action, templates, scripts. Tu n'attends plus d'être prêt — tu exécutes et tu t'améliores." }
+    ]
+  },
+  "score": {
+    "label": "MB SCORE",
+    "title1": "Un score.",
+    "title2": "5 piliers.",
+    "title3": "1 vision claire.",
+    "subtitle": "Évalue où tu en es. Identifie tes leviers. Passe à l'action.",
+    "cta": "Faire mon évaluation gratuite",
+    "pillars": [
+      { "key": "MENTAL", "label": "Mental", "desc": "Clarté mentale, confiance et discipline intérieure." },
+      { "key": "OFFER", "label": "Offer", "desc": "Offre claire, désirable et premium." },
+      { "key": "IMAGE", "label": "Image", "desc": "Positionnement, marque et autorité perçue." },
+      { "key": "ACTION", "label": "Action", "desc": "Système d'acquisition, contenu et conversion." },
+      { "key": "CLARITY", "label": "Money Clarity", "desc": "Structuration financière et vision long terme." }
+    ]
+  },
+  "pricing": {
+    "label": "NOS OFFRES",
+    "title1": "Choisis ton niveau de",
+    "title_gold": "construction.",
+    "subtitle": "Le MB Système est un parcours complet qui transforme ton potentiel en un système clair, structuré et vendable.",
+    "starter": {
+      "name": "MB STARTER",
+      "desc": "L'essentiel pour poser les premières fondations.",
+      "cta": "Choisir Starter",
+      "features": ["Accès au MB Score", "Mini-manuel MB", "30 règles Money Builder", "Checklist potentiel monétisable", "Plan 7 jours"]
+    },
+    "core": {
+      "name": "MB CORE",
+      "badge": "Le choix des ambitieux",
+      "desc": "Le système complet pour passer à la vitesse supérieure.",
+      "cta": "Choisir MB Core",
+      "features": ["Tout dans Starter", "Manuel complet MB", "Workbook complet", "100 Money Moves", "Scripts de vente", "Plan 30 jours", "Templates d'offre"]
+    },
+    "pro": {
+      "name": "MB PRO",
+      "desc": "Les templates, scripts et outils avancés pour accélérer.",
+      "cta": "Choisir MB Pro",
+      "features": ["Tout dans Core", "Générateur d'offre", "Générateur de bio premium", "Scripts DM avancés", "Calendrier contenu 30 jours", "Prompts IA MB", "Modèles landing page"]
+    }
+  },
+  "manifesto": {
+    "label": "NOTRE MANIFESTE",
+    "title1": "Moins de bruit.",
+    "title_gold": "Plus de système.",
+    "body": "Nous croyons qu'un petit nombre d'hommes et de femmes bien structurés peuvent changer leur vie, leur entourage et le monde.",
+    "values": [
+      { "key": "CLARTÉ", "desc": "Nous disons les choses telles qu'elles sont." },
+      { "key": "EXIGENCE", "desc": "Nous visons l'excellence dans les détails." },
+      { "key": "SYSTÈME", "desc": "Nous ne comptons pas sur la motivation." },
+      { "key": "IMPACT", "desc": "Nous construisons pour laisser une empreinte." }
+    ],
+    "read_more": "Lire le manifeste complet",
+    "quote": "Ton futur ne se souhaite pas.",
+    "quote_gold": "Il se structure.",
+    "quote_sub": "Rejoins le MB Système et construis la vie, l'image et la liberté que tu mérites."
+  },
+  "faq": {
+    "label": "QUESTIONS FRÉQUENTES",
+    "title": "Tu as des questions. Voici les réponses.",
+    "items": [
+      { "q": "À qui s'adresse MB Système ?", "a": "MB Système s'adresse aux personnes ambitieuses qui veulent clarifier leur potentiel, créer une offre vendable et construire un système d'action concret. Salariés frustrés, freelances, jeunes entrepreneurs, créateurs, étudiants, reconversion professionnelle." },
+      { "q": "Est-ce que MB Système promet de devenir riche ?", "a": "Non. MB Système ne promet pas de richesse rapide. Il donne une structure pour clarifier ton potentiel, créer une offre, améliorer ton image et passer à l'action. Les résultats dépendent de ton engagement et de ton exécution." },
+      { "q": "Est-ce adapté si je n'ai pas encore d'idée ?", "a": "Oui. Le système aide justement à identifier tes compétences, tes ressources, tes idées possibles et les transformer en pistes monétisables concrètes." },
+      { "q": "Que se passe-t-il après l'achat ?", "a": "Après ton paiement, tu reçois immédiatement accès à tous tes contenus : guides, workbooks, scripts, templates et plans d'action. Accès à vie, sans abonnement caché." },
+      { "q": "Est-ce adapté si je suis salarié ?", "a": "Oui. MB Système peut aider un salarié à clarifier ses compétences, améliorer son image professionnelle et identifier des pistes de revenus complémentaires." },
+      { "q": "Est-ce adapté aux freelances ?", "a": "Oui. Les freelances peuvent utiliser MB Système pour clarifier leur offre, améliorer leur positionnement et construire une image professionnelle plus forte." }
+    ]
+  },
+  "library": {
+    "label": "BIBLIOTHÈQUE MB",
+    "title": "Des ressources premium pour construire avec système.",
+    "subtitle": "Guides, workbooks, scripts, prompts et plans d'action conçus pour transformer ton potentiel en structure claire et vendable.",
+    "cta": "Voir les offres"
+  },
+  "footer": {
+    "tagline": "Construis-toi comme un actif. Le système pour adopter les comportements, la clarté et les réflexes des bâtisseurs.",
+    "disclaimer": "MB Système ne promet pas de richesse rapide. Il donne une structure pour agir avec clarté.",
+    "nav": "Navigation",
+    "legal": "Légal",
+    "copyright": "© 2026 MB SYSTÈME. Tous droits réservés.",
+    "mb_meaning": "MB = Millionaire Behavior · Money Builder",
+    "links": {
+      "score": "MB Score Gratuit",
+      "system": "Le Système",
+      "offers": "Offres",
+      "manifesto": "Manifeste",
+      "access": "Accéder à mon compte"
+    }
+  },
+  "quiz": {
+    "label": "MB SCORE",
+    "title": "Découvre ton profil",
+    "title_gold": "Money Builder",
+    "subtitle": "Réponds avec honnêteté. Ce diagnostic te donnera une clarté précieuse sur ton potentiel et les leviers à activer en priorité.",
+    "progress": "Question {current} sur {total}",
+    "progress_pct": "{pct}% complété",
+    "cta": "Continuer",
+    "confidential": "Tes réponses sont 100% confidentielles et utilisées uniquement pour générer ton diagnostic personnalisé.",
+    "reminder_title": "RAPPEL",
+    "reminder_body": "Il n'y a pas de bonnes ou de mauvaises réponses. Il y a seulement ton point de départ. Ce score est là pour t'élever, pas pour te juger.",
+    "pillars_title": "TES 5 PILIERS",
+    "footer_left_title": "PRENDS TON TEMPS",
+    "footer_left_body": "La précision de ton MB Score dépend de ton honnêteté.",
+    "footer_right_title": "BESOIN DE CLARTÉ ?",
+    "footer_right_cta": "VOIR LE SYSTÈME"
+  },
+  "result": {
+    "label": "TON MB SCORE",
+    "profile_label": "Ton profil",
+    "score_label": "Score global",
+    "blockers": "Ton blocage principal",
+    "levers": "Ton levier principal",
+    "next_step": "Ta prochaine étape",
+    "cta_starter": "Débloquer MB Starter — 29 €",
+    "cta_core": "Accéder au système complet — 97 €",
+    "cta_pro": "Passer en MB Pro — 197 €",
+    "retake": "Refaire le test",
+    "strengths": "Tes points forts",
+    "improvements": "Ce que tu vas améliorer"
+  },
+  "access": {
+    "title": "Bienvenue dans MB Système.",
+    "subtitle": "Ton accès est actif. Télécharge tes ressources ci-dessous.",
+    "download": "Télécharger",
+    "coming_soon": "Bientôt disponible",
+    "note": "Tes ressources sont disponibles immédiatement. Accès à vie, aucun abonnement."
+  }
+}

@@ -2,7 +2,26 @@
 
 import { motion } from 'framer-motion';
 
-export default function TruthSection() {
+type Locale = 'fr' | 'en';
+
+const copy = {
+  fr: {
+    heading1: 'Les millionnaires ne pensent pas seulement différemment.',
+    heading2Gold: 'Ils se comportent différemment.',
+    body: "MB Système ne te promet pas de devenir millionnaire. Il t'aide à comprendre et appliquer les comportements des bâtisseurs : clarté, discipline, offre, image et exécution.",
+    footnote: "Une compétence non structurée reste invisible. L'argent suit rarement le chaos. Il suit la clarté, la valeur et l'exécution.",
+  },
+  en: {
+    heading1: "Millionaires don't just think differently.",
+    heading2Gold: 'They behave differently.',
+    body: "MB System doesn't promise to make you a millionaire. It helps you understand and apply builder behaviors: clarity, discipline, offer, image and execution.",
+    footnote: "An unstructured skill stays invisible. Money rarely follows chaos. It follows clarity, value and execution.",
+  },
+};
+
+export default function TruthSection({ locale = 'fr' }: { locale?: Locale }) {
+  const t = copy[locale];
+
   return (
     <section className="py-24 px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
@@ -17,20 +36,18 @@ export default function TruthSection() {
           transition={{ duration: 0.8 }}
         >
           <p className="font-serif text-3xl sm:text-4xl lg:text-[52px] font-bold text-cream leading-tight mb-8">
-            Les millionnaires ne pensent pas seulement différemment.
+            {t.heading1}
             <br />
-            <span className="gold-text">Ils se comportent différemment.</span>
+            <span className="gold-text">{t.heading2Gold}</span>
           </p>
 
           <div className="divider-gold w-48 mx-auto mb-8" />
 
           <p className="text-[#A8A29A] text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-4">
-            MB Système ne te promet pas de devenir millionnaire. Il t&apos;aide à comprendre et appliquer
-            les comportements des bâtisseurs : clarté, discipline, offre, image et exécution.
+            {t.body}
           </p>
           <p className="text-[#A8A29A]/50 text-sm font-body italic">
-            Une compétence non structurée reste invisible.
-            L&apos;argent suit rarement le chaos. Il suit la clarté, la valeur et l&apos;exécution.
+            {t.footnote}
           </p>
         </motion.div>
       </div>

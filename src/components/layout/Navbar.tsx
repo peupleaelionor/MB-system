@@ -2,18 +2,59 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const navLinks = [
-  { label: 'Le Système', href: '/systeme' },
-  { label: 'MB Score', href: '/score' },
-  { label: 'Offres', href: '/offres' },
-  { label: 'Manifeste', href: '/manifeste' },
-];
+type Locale = 'fr' | 'en';
 
-export default function Navbar() {
+interface NavbarProps {
+  locale?: Locale;
+}
+
+const navLinks = {
+  fr: [
+    { label: 'Le Système', href: '/systeme' },
+    { label: 'MB Score', href: '/score' },
+    { label: 'Offres', href: '/offres' },
+    { label: 'Manifeste', href: '/manifeste' },
+  ],
+  en: [
+    { label: 'The System', href: '/en/systeme' },
+    { label: 'MB Score', href: '/en/score' },
+    { label: 'Offers', href: '/en/offres' },
+    { label: 'Manifesto', href: '/en/manifeste' },
+  ],
+};
+
+const accountLabel = { fr: 'Accéder à mon compte', en: 'Access my account' };
+
+function LanguageSwitcher({ locale }: { locale: Locale }) {
+  const pathname = usePathname();
+  const isEn = locale === 'en';
+
+  const getOppositeHref = () => {
+    if (isEn) {
+      return pathname.replace(/^\/en/, '') || '/';
+    } else {
+      return `/en${pathname}`;
+    }
+  };
+
+  return (
+    <Link
+      href={getOppositeHref()}
+      className="flex items-center gap-1.5 px-2.5 py-1 border border-[#2A2418] rounded text-[10px] font-body font-bold tracking-widest uppercase text-[#A8A29A] hover:border-gold/40 hover:text-gold transition-all duration-200"
+    >
+      {isEn ? '🇫🇷 FR' : '🇬🇧 EN'}
+    </Link>
+  );
+}
+
+export default function Navbar({ locale = 'fr' }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const links = navLinks[locale];
+  const accLabel = accountLabel[locale];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 30);
@@ -35,8 +76,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
 
-          {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group">
+          <Link href={locale === 'en' ? '/en' : '/'} className="flex flex-col leading-none group">
             <span className="text-cream font-serif font-bold text-xl tracking-wider group-hover:text-gold-light transition-colors duration-300">
               MB
             </span>
@@ -48,13 +88,10 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link, i) => (
+            {links.map((link, i) => (
               <div key={link.href} className="flex items-center">
-                {i > 0 && (
-                  <span className="w-1 h-1 rounded-full bg-gold/30 mx-3" />
-                )}
+                {i > 0 && <span className="w-1 h-1 rounded-full bg-gold/30 mx-3" />}
                 <Link
                   href={link.href}
                   className="text-[#A8A29A] hover:text-cream text-sm font-body transition-colors duration-200 relative group py-1"
@@ -66,13 +103,13 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher locale={locale} />
             <Link
-              href="/access"
-              className="flex items-center gap-2 px-4 py-2 border border-gold/40 text-cream text-xs font-body font-medium tracking-widest uppercase rounded hover:border-gold hover:text-gold transition-all duration-300"
+              href={locale === 'en' ? '/en/access' : '/access'}
+              className="flex items-center gap-2 px-4 py-2 border border-gold/40 text-cream text-[10px] font-body font-medium tracking-widest uppercase rounded hover:border-gold hover:text-gold transition-all duration-300"
             >
-              Accéder à mon compte
+              {accLabel}
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                 <circle cx="12" cy="7" r="4"/>
@@ -80,29 +117,18 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile toggle */}
           <button
             className="md:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
-            <motion.span
-              animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-              className="block w-5 h-0.5 bg-cream origin-center"
-            />
-            <motion.span
-              animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block w-5 h-0.5 bg-cream"
-            />
-            <motion.span
-              animate={menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-              className="block w-5 h-0.5 bg-cream origin-center"
-            />
+            <motion.span animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className="block w-5 h-0.5 bg-cream origin-center" />
+            <motion.span animate={menuOpen ? { opacity: 0 } : { opacity: 1 }} className="block w-5 h-0.5 bg-cream" />
+            <motion.span animate={menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }} className="block w-5 h-0.5 bg-cream origin-center" />
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -112,24 +138,18 @@ export default function Navbar() {
             className="md:hidden border-t border-[#2A2418] bg-[#050505]/98 backdrop-blur-xl overflow-hidden"
           >
             <div className="px-6 py-6 flex flex-col gap-5">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-[#A8A29A] hover:text-cream text-base font-body transition-colors"
-                  onClick={() => setMenuOpen(false)}
-                >
+              {links.map((link) => (
+                <Link key={link.href} href={link.href} className="text-[#A8A29A] hover:text-cream text-base font-body transition-colors" onClick={() => setMenuOpen(false)}>
                   {link.label}
                 </Link>
               ))}
-              <div className="divider-gold my-2" />
-              <Link
-                href="/access"
-                className="inline-flex items-center gap-2 px-4 py-3 border border-gold/40 text-cream text-xs tracking-widest uppercase font-body font-medium rounded text-center justify-center hover:border-gold hover:text-gold transition-all"
-                onClick={() => setMenuOpen(false)}
-              >
-                Accéder à mon compte
-              </Link>
+              <div className="divider-gold my-1" />
+              <div className="flex items-center gap-3">
+                <LanguageSwitcher locale={locale} />
+                <Link href={locale === 'en' ? '/en/access' : '/access'} className="flex-1 px-4 py-3 border border-gold/40 text-cream text-[10px] tracking-widest uppercase font-body font-medium rounded text-center hover:border-gold hover:text-gold transition-all" onClick={() => setMenuOpen(false)}>
+                  {accLabel}
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}

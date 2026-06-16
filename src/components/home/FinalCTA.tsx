@@ -3,7 +3,33 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-export default function FinalCTA() {
+type Locale = 'fr' | 'en';
+
+const copy = {
+  fr: {
+    heading1: 'Ton futur ne se souhaite pas.',
+    heading2: 'Il se',
+    heading2Gold: 'structure.',
+    body: "Rejoins le MB Système et construis la vie, l'image et la liberté que tu mérites.",
+    cta1: 'Découvrir mon MB Score maintenant →',
+    cta2: 'Voir les offres',
+    trust: ['Accès immédiat', 'Paiement unique', '14 jours garantis'],
+  },
+  en: {
+    heading1: 'Your future is not wished for.',
+    heading2: 'It is',
+    heading2Gold: 'structured.',
+    body: 'Join MB System and build the life, image and freedom you deserve.',
+    cta1: 'Discover my MB Score now →',
+    cta2: 'See offers',
+    trust: ['Instant access', 'One-time payment', '14-day guarantee'],
+  },
+};
+
+export default function FinalCTA({ locale = 'fr' }: { locale?: Locale }) {
+  const t = copy[locale];
+  const base = locale === 'en' ? '/en' : '';
+
   return (
     <section className="relative overflow-hidden bg-[#0B0B0B] border-t border-[#2A2418]">
       <div className="absolute inset-0 pointer-events-none">
@@ -19,13 +45,13 @@ export default function FinalCTA() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-serif text-4xl lg:text-5xl font-bold text-cream leading-tight mb-2">
-              Ton futur ne se souhaite pas.
+              {t.heading1}
             </p>
             <p className="font-serif text-4xl lg:text-5xl font-bold leading-tight mb-8">
-              Il se <span className="gold-text">structure.</span>
+              {t.heading2} <span className="gold-text">{t.heading2Gold}</span>
             </p>
             <p className="text-[#A8A29A] text-base font-body leading-relaxed">
-              Rejoins le MB Système et construis la vie, l&apos;image et la liberté que tu mérites.
+              {t.body}
             </p>
           </motion.div>
 
@@ -37,20 +63,20 @@ export default function FinalCTA() {
             className="flex flex-col gap-4"
           >
             <Link
-              href="/score"
+              href={`${base}/score`}
               className="btn-gold px-8 py-4 rounded-lg text-center inline-flex items-center justify-center gap-2"
             >
-              Découvrir mon MB Score maintenant →
+              {t.cta1}
             </Link>
             <Link
-              href="/offres"
+              href={`${base}/offres`}
               className="btn-outline-gold px-8 py-4 rounded-lg text-center inline-flex items-center justify-center"
             >
-              Voir les offres
+              {t.cta2}
             </Link>
 
             <div className="flex items-center justify-center gap-6 pt-2">
-              {['Accès immédiat', 'Paiement unique', '14 jours garantis'].map((item) => (
+              {t.trust.map((item) => (
                 <div key={item} className="flex items-center gap-1.5 text-[#A8A29A] text-xs font-body">
                   <svg className="w-3 h-3 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />

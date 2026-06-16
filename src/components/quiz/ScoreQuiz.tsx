@@ -6,13 +6,62 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { questions } from '@/lib/scoring';
 
-const pillars = [
-  { key: 'MENTAL', label: 'Mental', desc: 'Clarté, mindset, confiance' },
-  { key: 'OFFER', label: 'Offer', desc: 'Offre claire, désirable et premium' },
-  { key: 'IMAGE', label: 'Image', desc: 'Positionnement, marque et autorité' },
-  { key: 'ACTION', label: 'Action', desc: "Système d'exécution, contenu et conversion" },
-  { key: 'MONEY CLARITY', label: 'Money Clarity', desc: 'Structuration financière et vision long terme' },
-];
+type Locale = 'fr' | 'en';
+
+const copy = {
+  fr: {
+    label: 'MB SCORE',
+    heading1: 'Découvre ton profil',
+    heading1Gold: 'Money Builder',
+    subtitle: "Réponds avec honnêteté. Ce diagnostic te donnera une clarté précieuse sur ton potentiel et les leviers à activer en priorité.",
+    questionOf: (current: number, total: number) => `Question ${current} sur ${total}`,
+    completed: (pct: number) => `${pct}% complété`,
+    confidentiality: 'Tes réponses sont 100% confidentielles et utilisées uniquement pour générer ton diagnostic personnalisé.',
+    quoteText: 'La clarté attire.\nLe système convertit.\nLa discipline scale.',
+    pillarsLabel: 'TES 5 PILIERS',
+    reminderLabel: 'RAPPEL',
+    reminderText: "Il n'y a pas de bonnes ou de mauvaises réponses. Il y a seulement ton point de départ.\n\nCe score est là pour t'élever, pas pour te juger.",
+    takeYourTime: 'PRENDS TON TEMPS',
+    takeYourTimeDesc: 'La précision dépend de ton honnêteté.',
+    seeResult: 'Voir mon résultat',
+    continueBtn: 'Continuer',
+    pressEnter: 'Appuie sur Entrée ↵',
+    seeSystem: 'Voir le système',
+    pillars: [
+      { key: 'MENTAL', desc: 'Clarté, mindset, confiance' },
+      { key: 'OFFER', desc: 'Offre claire, désirable et premium' },
+      { key: 'IMAGE', desc: 'Positionnement, marque et autorité' },
+      { key: 'ACTION', desc: "Système d'exécution, contenu et conversion" },
+      { key: 'MONEY CLARITY', desc: 'Structuration financière et vision long terme' },
+    ],
+  },
+  en: {
+    label: 'MB SCORE',
+    heading1: 'Discover your',
+    heading1Gold: 'Money Builder profile',
+    subtitle: 'Answer honestly. This diagnostic will give you precious clarity on your potential and the levers to activate first.',
+    questionOf: (current: number, total: number) => `Question ${current} of ${total}`,
+    completed: (pct: number) => `${pct}% completed`,
+    confidentiality: 'Your answers are 100% confidential and used only to generate your personalized diagnostic.',
+    quoteText: 'Clarity attracts.\nThe system converts.\nDiscipline scales.',
+    pillarsLabel: 'YOUR 5 PILLARS',
+    reminderLabel: 'REMINDER',
+    reminderText: "There are no right or wrong answers. There is only your starting point.\n\nThis score is here to elevate you, not to judge you.",
+    takeYourTime: 'TAKE YOUR TIME',
+    takeYourTimeDesc: 'Precision depends on your honesty.',
+    seeResult: 'See my result',
+    continueBtn: 'Continue',
+    pressEnter: 'Press Enter ↵',
+    seeSystem: 'See the system',
+    pillars: [
+      { key: 'MENTAL', desc: 'Clarity, mindset, confidence' },
+      { key: 'OFFER', desc: 'Clear, desirable and premium offer' },
+      { key: 'IMAGE', desc: 'Positioning, brand and authority' },
+      { key: 'ACTION', desc: 'Acquisition system, content and conversion' },
+      { key: 'MONEY CLARITY', desc: 'Financial structure and long-term vision' },
+    ],
+  },
+};
 
 const questionPillar: Record<number, string> = {
   1: 'ACTION',
@@ -24,11 +73,13 @@ const questionPillar: Record<number, string> = {
   7: 'IMAGE',
 };
 
-export default function ScoreQuiz() {
+export default function ScoreQuiz({ locale = 'fr' }: { locale?: Locale }) {
   const router = useRouter();
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [selected, setSelected] = useState<string | null>(null);
+  const t = copy[locale];
+  const base = locale === 'en' ? '/en' : '';
 
   const question = questions[currentQ];
   const progress = (currentQ / questions.length) * 100;
@@ -51,7 +102,7 @@ export default function ScoreQuiz() {
     setAnswers(newAnswers);
     if (isLast) {
       const encoded = btoa(JSON.stringify(newAnswers));
-      router.push(`/score/result?data=${encoded}`);
+      router.push(`${base}/score/result?data=${encoded}`);
     } else {
       setCurrentQ(currentQ + 1);
       setSelected(null);
@@ -60,32 +111,28 @@ export default function ScoreQuiz() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Page Header */}
       <div className="pt-28 pb-12 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
 
-            {/* Left — Main quiz */}
             <div className="lg:col-span-3">
-              <div className="section-label mb-4">MB SCORE</div>
+              <div className="section-label mb-4">{t.label}</div>
               <h1 className="font-serif text-4xl lg:text-5xl font-bold text-cream mb-3 leading-tight">
-                Découvre ton profil<br />
-                <span className="gold-text">Money Builder</span>
+                {t.heading1}<br />
+                <span className="gold-text">{t.heading1Gold}</span>
               </h1>
               <p className="text-[#A8A29A] text-sm font-body mb-10 max-w-md leading-relaxed">
-                Réponds avec honnêteté. Ce diagnostic te donnera une clarté précieuse sur ton potentiel et les leviers à activer en priorité.
+                {t.subtitle}
               </p>
 
-              {/* Quiz card */}
               <div className="premium-card rounded-2xl p-6 mb-6">
-                {/* Progress */}
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-gold text-sm font-body font-medium">
-                      Question {currentQ + 1} sur {questions.length}
+                      {t.questionOf(currentQ + 1, questions.length)}
                     </span>
                     <span className="text-[#A8A29A] text-xs font-body">
-                      {Math.round(progress)}% complété
+                      {t.completed(Math.round(progress))}
                     </span>
                   </div>
                   <div className="h-1 bg-[#2A2418] rounded-full overflow-hidden">
@@ -106,17 +153,14 @@ export default function ScoreQuiz() {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3 }}
                   >
-                    {/* Category label */}
                     <div className="text-[10px] font-body font-bold tracking-widest text-gold uppercase mb-3">
                       {activePillar}
                     </div>
 
-                    {/* Question */}
                     <h2 className="font-serif text-xl lg:text-2xl font-bold text-cream mb-6 leading-snug">
                       {question.question}
                     </h2>
 
-                    {/* Answers */}
                     <div className="flex flex-col gap-2.5">
                       {question.answers.map((answer, i) => (
                         <button
@@ -143,37 +187,31 @@ export default function ScoreQuiz() {
                 </AnimatePresence>
               </div>
 
-              {/* Confidentiality note */}
               <div className="flex items-center gap-2 text-[#A8A29A]/60 text-xs font-body mb-4">
                 <svg className="w-3.5 h-3.5 text-gold/40 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
-                Tes réponses sont 100% confidentielles et utilisées uniquement pour générer ton diagnostic personnalisé.
+                {t.confidentiality}
               </div>
             </div>
 
-            {/* Right — Sidebar */}
             <div className="lg:col-span-2 flex flex-col gap-4">
-              {/* Quote card */}
               <div className="premium-card rounded-2xl p-5">
-                <div className="text-gold text-3xl font-serif leading-none mb-2">"</div>
+                <div className="text-gold text-3xl font-serif leading-none mb-2">&quot;</div>
                 <p className="font-serif text-base text-cream italic leading-relaxed mb-3">
-                  La clarté attire.<br />
-                  Le système convertit.<br />
-                  La discipline scale.
+                  {t.quoteText.split('\n').map((line, i) => (
+                    <span key={i}>{line}{i < 2 && <br />}</span>
+                  ))}
                 </p>
-                <div className="text-[10px] font-body tracking-widest text-[#A8A29A] uppercase">
-                  MB SYSTÈME
-                </div>
+                <div className="text-[10px] font-body tracking-widest text-[#A8A29A] uppercase">MB SYSTÈME</div>
               </div>
 
-              {/* 5 pillars */}
               <div className="premium-card rounded-2xl p-5">
                 <div className="text-[10px] font-body font-bold tracking-widest text-[#A8A29A] uppercase mb-4">
-                  TES 5 PILIERS
+                  {t.pillarsLabel}
                 </div>
                 <div className="flex flex-col gap-3">
-                  {pillars.map((p) => {
+                  {t.pillars.map((p) => {
                     const isActive = p.key === activePillar;
                     return (
                       <div key={p.key} className={`flex items-center gap-3 transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-40'}`}>
@@ -204,19 +242,15 @@ export default function ScoreQuiz() {
                 </div>
               </div>
 
-              {/* Reminder */}
               <div className="premium-card rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center text-gold text-sm">
-                    💎
-                  </div>
-                  <div className="text-[10px] font-body font-bold tracking-widest text-[#A8A29A] uppercase">RAPPEL</div>
+                  <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center text-gold text-sm">💎</div>
+                  <div className="text-[10px] font-body font-bold tracking-widest text-[#A8A29A] uppercase">{t.reminderLabel}</div>
                 </div>
                 <p className="text-[#A8A29A] text-xs font-body leading-relaxed">
-                  Il n&apos;y a pas de bonnes ou de mauvaises réponses.
-                  Il y a seulement ton point de départ.
-                  <br /><br />
-                  Ce score est là pour t&apos;élever, pas pour te juger.
+                  {t.reminderText.split('\n\n').map((para, i) => (
+                    <span key={i}>{para}{i === 0 && <><br /><br /></>}</span>
+                  ))}
                 </p>
               </div>
             </div>
@@ -224,11 +258,9 @@ export default function ScoreQuiz() {
         </div>
       </div>
 
-      {/* Sticky bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-[#050505]/98 backdrop-blur-xl border-t border-[#2A2418] z-40">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
           <div className="grid md:grid-cols-3 gap-4 items-center">
-            {/* Left info */}
             <div className="hidden md:block">
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 rounded-full border border-gold/30 flex items-center justify-center">
@@ -237,45 +269,38 @@ export default function ScoreQuiz() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-cream text-[11px] font-body font-semibold">PRENDS TON TEMPS</div>
-                  <div className="text-[#A8A29A] text-[10px] font-body">La précision dépend de ton honnêteté.</div>
+                  <div className="text-cream text-[11px] font-body font-semibold">{t.takeYourTime}</div>
+                  <div className="text-[#A8A29A] text-[10px] font-body">{t.takeYourTimeDesc}</div>
                 </div>
               </div>
             </div>
 
-            {/* Center — CTA */}
             <div className="flex justify-center">
               <button
                 onClick={handleNext}
                 disabled={!selected}
                 className={`px-12 py-3.5 rounded-lg text-xs font-body font-bold tracking-widest uppercase transition-all duration-300 flex items-center gap-2 ${
-                  selected
-                    ? 'btn-gold'
-                    : 'bg-[#2A2418] text-[#A8A29A] cursor-not-allowed'
+                  selected ? 'btn-gold' : 'bg-[#2A2418] text-[#A8A29A] cursor-not-allowed'
                 }`}
               >
-                {isLast ? 'Voir mon résultat' : 'Continuer'}
+                {isLast ? t.seeResult : t.continueBtn}
                 {selected && <span>→</span>}
               </button>
             </div>
 
-            {/* Right */}
             <div className="hidden md:flex justify-end">
-              <Link href="/systeme" className="btn-outline-gold px-5 py-3 rounded-lg text-[11px] inline-flex items-center gap-1">
-                Voir le système
+              <Link href={`${base}/systeme`} className="btn-outline-gold px-5 py-3 rounded-lg text-[11px] inline-flex items-center gap-1">
+                {t.seeSystem}
               </Link>
             </div>
           </div>
 
           {selected && (
-            <p className="text-center text-[10px] text-[#A8A29A]/40 font-body mt-2">
-              Appuie sur Entrée ↵
-            </p>
+            <p className="text-center text-[10px] text-[#A8A29A]/40 font-body mt-2">{t.pressEnter}</p>
           )}
         </div>
       </div>
 
-      {/* Bottom spacer for sticky bar */}
       <div className="h-24" />
     </div>
   );
