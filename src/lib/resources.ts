@@ -7,6 +7,7 @@ export interface MBResource {
   subtitle: string;
   image: string;
   type: string;
+  downloadPath: string;
 }
 
 export const mbResources: MBResource[] = [
@@ -17,6 +18,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Pose les fondations de ton système',
     image: '/covers/mb-starter-guide.png',
     type: 'Guide',
+    downloadPath: '/downloads/mb-starter-guide.pdf',
   },
   {
     id: '30-regles',
@@ -25,6 +27,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Millionaire Behavior',
     image: '/covers/30-regles-millionaire-behavior.png',
     type: 'Cartes',
+    downloadPath: '/downloads/30-regles-millionaire-behavior.pdf',
   },
   {
     id: 'mb-systeme-manuel',
@@ -33,6 +36,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Le manuel pour construire ton potentiel comme un actif',
     image: '/covers/mb-systeme-manuel.png',
     type: 'Manuel',
+    downloadPath: '/downloads/mb-systeme-manuel.pdf',
   },
   {
     id: 'mb-workbook',
@@ -41,6 +45,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Clarifier. Structurer. Construire.',
     image: '/covers/mb-workbook.png',
     type: 'Workbook',
+    downloadPath: '/downloads/mb-workbook.pdf',
   },
   {
     id: '100-money-moves',
@@ -49,6 +54,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Idées propres pour créer de la valeur',
     image: '/covers/100-money-moves.png',
     type: 'Bibliothèque',
+    downloadPath: '/downloads/100-money-moves.pdf',
   },
   {
     id: 'sales-scripts',
@@ -57,6 +63,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Vendre sans forcer',
     image: '/covers/mb-sales-scripts.png',
     type: 'Scripts',
+    downloadPath: '/downloads/mb-sales-scripts.pdf',
   },
   {
     id: 'prompts-ia',
@@ -65,6 +72,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Créer plus vite, penser plus clair',
     image: '/covers/prompts-ia-mb.png',
     type: 'Prompts',
+    downloadPath: '/downloads/prompts-ia-mb.pdf',
   },
   {
     id: 'calendrier-contenu',
@@ -73,6 +81,7 @@ export const mbResources: MBResource[] = [
     subtitle: '30 jours pour publier avec système',
     image: '/covers/calendrier-contenu.png',
     type: 'Calendrier',
+    downloadPath: '/downloads/calendrier-contenu.pdf',
   },
   {
     id: 'generateur-offre',
@@ -81,6 +90,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'Transformer une idée en offre vendable',
     image: '/covers/generateur-offre.png',
     type: 'Template',
+    downloadPath: '/downloads/generateur-offre.pdf',
   },
   {
     id: 'kit-internationalisation',
@@ -89,6 +99,7 @@ export const mbResources: MBResource[] = [
     subtitle: 'FR / EN — vendre plus loin',
     image: '/covers/kit-internationalisation.png',
     type: 'Kit',
+    downloadPath: '/downloads/kit-internationalisation.pdf',
   },
 ];
 
