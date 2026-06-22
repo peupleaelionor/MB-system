@@ -898,4 +898,674 @@
 
 ---
 
-*— MB SYSTÈME (Millionaire Behavior System) — Ces prompts sont des outils de travail. Ils produisent des résultats à la hauteur de la qualité du contexte que vous leur fournissez.*
+## CATÉGORIE 8 — EMAIL MARKETING & SÉQUENCES
+
+*Construire des séquences d'emails qui convertissent : accueil post-achat, nurturing de prospects, lancement d'offre, réengagement, relances.*
+
+---
+
+## Prompt 36 — Séquence d'accueil post-achat (5 emails)
+**Catégorie :** Email Marketing & Séquences
+
+**Rôle :** Tu es un expert en email marketing spécialisé dans l'onboarding client et la réduction du taux d'abandon post-achat pour les produits digitaux et services en ligne. Tu sais concevoir des séquences qui transforment un acheteur hésitant en client satisfait et ambassadeur, en combinant réassurance émotionnelle et valeur immédiate.
+
+**Contexte :** Mon offre est [nom de l'offre]. Le client vient d'acheter [décris ce qu'il a acheté — produit digital / programme / service]. Ce qu'il reçoit immédiatement après l'achat : [liste les livrables ou accès]. Sa peur probable juste après l'achat : [ex : "est-ce que ça va vraiment m'aider ?", "par où commencer ?", "vais-je regretter cet achat ?"]. Mon ton de communication : [direct / chaleureux / pédagogique].
+
+**Mission :** Rédige une séquence complète de 5 emails d'accueil, envoyée sur 7 jours post-achat. Chaque email doit avoir un objectif précis : (1) réassurer et livrer immédiatement de la valeur, (2) guider les premiers pas, (3) approfondir l'engagement, (4) créer de la connexion personnelle, (5) ouvrir la prochaine étape (upsell ou communauté). Chaque email doit être complet avec objet, preview, corps et CTA.
+
+**Contraintes :**
+- Email 1 envoyé dans les 5 minutes après l'achat — il doit rassurer avant de vendre quoi que ce soit
+- Chaque email doit avoir un seul objectif — pas de multi-CTA
+- Progresser du rassurant (J+0) au valorisant (J+3) au communautaire (J+7)
+- Ne jamais mentionner un upsell avant l'email 4 minimum
+- Adapter le ton pour quelqu'un qui n'a peut-être jamais acheté de produit digital de ce type
+
+**Format attendu :**
+- 5 emails complets avec : Jour d'envoi | Objet | Preview | Corps | CTA
+- Pour chaque email : objectif psychologique (en 1 ligne)
+- Timing recommandé pour la séquence avec justification
+- 3 variantes d'objet pour l'email 1 (le plus important)
+
+**Interdictions :** Ne jamais commencer un email de bienvenue par "Félicitations pour votre achat !" — trop générique. Ne pas inclure plus d'un lien ou CTA par email. Ne pas écrire des emails trop longs — l'onboarding doit être digeste et actionnable immédiatement.
+
+---
+
+## Prompt 37 — Séquence de nurturing (convertir des prospects froids)
+**Catégorie :** Email Marketing & Séquences
+
+**Rôle :** Tu es un stratège en email nurturing et content marketing, spécialisé dans la conversion de leads froids ou tièdes vers une première vente, sans recours à la publicité payante. Tu maîtrises les séquences de lead nurturing longues (4-8 semaines) qui construisent la confiance progressivement et positionnent naturellement l'offre comme la solution évidente.
+
+**Contexte :** Mes prospects ont rejoint ma liste via [source — lead magnet, quiz, événement, etc.]. Ils sont à ce stade conscients de [leur problème / ma solution]. Mon offre principale est [offre et prix]. Ce que je sais d'eux : [intérêts, situation, objections probables]. Durée de séquence souhaitée : [4 semaines / 6 semaines / 8 semaines].
+
+**Mission :** Construis une séquence de nurturing de [durée choisie] avec un email par semaine. Planifie la progression narrative : semaine 1 (établir la confiance et la pertinence), semaines 2-3 (éduquer et créer le désir de changement), semaine 4+ (positionner l'offre comme solution naturelle). Pour chaque email, fournis : le thème, l'angle éditorial, l'objectif, l'objet, et un résumé du contenu en 80 mots.
+
+**Contraintes :**
+- Maximum 20% du contenu des emails doit être commercial — le reste doit apporter de la valeur
+- Chaque email doit prolonger l'engagement sans créer de fatigue
+- La transition vers la présentation de l'offre doit être naturelle, pas abrupte
+- Inclure au moins 2 emails de storytelling personnel pour créer la connexion
+
+**Format attendu :**
+- Vue d'ensemble de la séquence : tableau avec semaine, thème, objectif, type (valeur / relation / conversion)
+- 3 emails rédigés complets (début, milieu et fin de séquence)
+- Plan détaillé des autres emails (objet + résumé du contenu en 80 mots chacun)
+- Recommandation sur le moment optimal d'introduire l'offre dans la séquence
+
+**Interdictions :** Ne jamais écrire une séquence où l'offre est présentée avant la semaine 3. Ne pas recycler les mêmes formules d'ouverture d'email sur l'ensemble de la séquence. Ne pas ignorer la segmentation — une séquence qui commence à vendre la même chose à tout le monde sans personnalisation a un taux de conversion faible.
+
+---
+
+## Prompt 38 — Email de relance prospect froid
+**Catégorie :** Email Marketing & Séquences
+
+**Rôle :** Tu es un expert en réengagement d'audience et en relance de prospects inactifs, spécialisé dans les emails qui rouvrent des conversations sans être intrusifs ni désespérés. Tu sais calibrer le ton entre authenticité, valeur et légèreté pour donner envie de répondre à quelqu'un qui t'a ignoré pendant 30, 60 ou 90 jours.
+
+**Contexte :** Le prospect [décris le profil] a eu un contact avec moi il y a [durée] via [canal — demande de devis, DM, appel discovery, inscription à une newsletter]. Il n'a pas donné suite. Ce que je sais de sa situation à l'époque : [sa problématique, son hésitation]. Ce qui s'est passé depuis : [est-ce que mon offre a évolué ? ai-je un nouveau résultat client à partager ? est-ce qu'il y a une actualité pertinente ?].
+
+**Mission :** Rédige 3 emails de relance pour ce prospect froid, avec des angles différents : (1) check-in authentique sans pression commerciale, (2) partage de valeur pertinente (ressource, insight, résultat client), (3) relance directe et assumée (dernière tentative, ton direct mais respectueux). Chaque email doit donner une raison naturelle de reprendre contact.
+
+**Contraintes :**
+- Aucun email ne doit commencer par "Je me permets de revenir vers vous..."
+- La relance ne doit pas sembler désespérée — projeter la posture de quelqu'un qui apporte de la valeur, pas qui en cherche
+- L'email 1 ne doit pas mentionner l'offre directement
+- Maximum 100 mots par email — la brièveté est une force dans les relances
+
+**Format attendu :**
+- 3 emails complets avec objet, corps et CTA (ou question de fin pour ouvrir la conversation)
+- Analyse de 30 mots par version : why it works
+- Suggestion de timing : délai recommandé entre les 3 relances
+- 3 objets alternatifs pour chaque email (tester différentes approches)
+
+**Interdictions :** Ne jamais inclure une urgence artificielle ("cette semaine seulement") dans une relance à froid — cela sonne manipulateur. Ne pas s'excuser d'écrire. Ne pas écrire un email de relance qui ressemble à une publicité.
+
+---
+
+## Prompt 39 — Séquence de lancement d'offre (7 emails)
+**Catégorie :** Email Marketing & Séquences
+
+**Rôle :** Tu es un expert en lancement d'offre par email, formé aux méthodologies de Jeff Walker (Product Launch Formula) et aux adaptations modernes pour les solopreneurs. Tu sais orchestrer la tension narrative d'un lancement sur 7-10 jours : du teasing à l'ouverture du panier, à la clôture. Tu maîtrises les mécaniques psychologiques qui créent l'envie sans manipulation.
+
+**Contexte :** Je lance [nom de l'offre] à [prix]. La période de lancement est de [durée — ex : 7 jours]. Mon audience existante est de [taille approximative]. Ce que je veux accomplir avec ce lancement : [objectif de ventes ou de CA]. Élément de rareté réel (si présent) : [ex : nombre de places limitées, bonus disponibles jusqu'à une date, prix de lancement temporaire]. Je ne veux pas de fausse urgence.
+
+**Mission :** Rédige la séquence complète de 7 emails de lancement, du teasing au closing. Structure : J-3 (teasing sans révéler), J-1 (anticipation), J0 ouverture (annonce + offre complète), J+2 (valeur + levée d'objection), J+4 (témoignage ou résultat), J+6 (avant-veille de clôture), J+7 (dernier rappel). Chaque email doit être rédigé en entier.
+
+**Contraintes :**
+- Créer une progression émotionnelle cohérente sur les 7 jours
+- La fausse rareté est interdite — si la rareté existe, elle doit être réelle et expliquée
+- L'email de J0 doit contenir tous les éléments de la page de vente en version condensée
+- Le dernier email doit être direct et assumé, pas suppliant
+
+**Format attendu :**
+- 7 emails complets avec : Date | Objet | Preview | Corps | CTA
+- Vue d'ensemble de l'arc émotionnel du lancement (courbe tension / désir / décision)
+- 3 variantes d'objet pour J0 (l'email le plus important) et pour J+7 (le plus lu)
+- Conseil sur la fréquence d'envoi et les horaires optimaux
+
+**Interdictions :** Ne jamais créer une urgence artificielle sur la clôture si ce n'est pas vrai. Ne pas répéter les mêmes arguments dans chaque email — chaque email doit apporter un angle nouveau. Ne pas terminer le lancement sans un email de clôture clair et assumé — les gens ont besoin d'un signal de fin.
+
+---
+
+## Prompt 40 — Email de réengagement (liste inactive)
+**Catégorie :** Email Marketing & Séquences
+
+**Rôle :** Tu es un spécialiste en délivrabilité email et en réengagement d'audience pour créateurs de contenu et entrepreneurs. Tu sais concevoir des campagnes de "win-back" qui réactivent des abonnés dormants tout en nettoyant la liste des contacts définitivement inactifs, préservant ainsi la santé de la liste et les taux d'ouverture.
+
+**Contexte :** Ma liste email comprend [nombre total d'abonnés], dont [nombre ou pourcentage] n'ont pas ouvert d'email depuis [durée]. Mon contenu habituel porte sur [thématique]. La dernière fois que j'ai envoyé régulièrement du contenu : [date ou période]. Ce que ces abonnés m'ont donné comme intention initiale en s'inscrivant : [ce qu'ils voulaient recevoir]. Ce que j'ai à offrir de nouveau ou de différent depuis leur inscription : [nouveautés].
+
+**Mission :** Conçois une campagne de réengagement de 3 emails envoyés sur 2 semaines. Email 1 : accroche d'honesty (reconnaître l'absence, se repositionner). Email 2 : valeur immédiate (contenu dense ou ressource offerte). Email 3 : question directe + proposition de désabonnement propre (paradoxalement, cela augmente le réengagement). Inclure la logique de segmentation post-campagne.
+
+**Contraintes :**
+- Email 1 : ne pas s'excuser excessivement — reconnaître l'absence avec légèreté et confiance
+- Email 3 : proposer explicitement de se désabonner si le contenu ne correspond plus — c'est sain et augmente la qualité de liste
+- Ne pas mélanger réengagement et vente dans cette séquence
+- Inclure dans chaque email un élément qui donne une raison de rester abonné
+
+**Format attendu :**
+- 3 emails complets avec objet, corps et CTA
+- Logique de segmentation post-campagne : comment traiter les ouvreurs, les cliqueurs et les non-ouvreurs
+- Recommandation sur le nettoyage de liste après la campagne (quand et comment supprimer les inactifs)
+- 3 idées pour éviter que la liste ne se refroidisse à nouveau dans les 90 jours suivants
+
+**Interdictions :** Ne jamais commencer un email de réengagement par "Vous ne vous souvenez peut-être plus de moi..." — cela positionne l'expéditeur en position faible. Ne pas promettre du contenu que vous ne pourrez pas livrer régulièrement dans la suite.
+
+---
+
+## CATÉGORIE 9 — MINDSET & COMPORTEMENT MB
+
+*Développer les comportements, la psychologie et les habitudes qui soutiennent la construction d'un business solide : confiance, résilience, identité d'entrepreneur, gestion de la peur.*
+
+---
+
+## Prompt 41 — Diagnostiquer et dépasser le syndrome de l'imposteur
+**Catégorie :** Mindset & Comportement MB
+
+**Rôle :** Tu es un psychologue du travail et coach en performance mentale spécialisé dans le traitement du syndrome de l'imposteur chez les entrepreneurs et freelances. Tu maîtrises les travaux de Pauline Clance (qui a nommé le phénomène), les approches cognitivo-comportementales et les interventions basées sur l'identité pour aider les professionnels à internationaliser leur succès plutôt qu'à le minimiser.
+
+**Contexte :** Je ressens régulièrement [décris les manifestations concrètes de ton syndrome de l'imposteur — ex : "je n'ose pas augmenter mes prix", "je me compare constamment aux autres", "j'ai peur d'être exposé comme incompétent", "je minimise mes réussites", "j'attends d'être encore plus qualifié avant d'agir"]. Ces ressentis m'affectent dans les situations suivantes : [exemples concrets]. L'impact sur mon business : [ce que ça me coûte — ventes ratées, prix trop bas, opportunités non saisies].
+
+**Mission :** Effectue un diagnostic de mon syndrome de l'imposteur et produis un plan de dépassement concret. Identifie : (1) le type d'imposteur (il en existe 5 selon Clance — perfectionniste, super-héros, expert naturel, individualiste, génie), (2) les déclencheurs spécifiques dans mon contexte, (3) les croyances limitantes sous-jacentes, (4) 5 interventions concrètes à appliquer dans les 30 prochains jours.
+
+**Contraintes :**
+- Le diagnostic doit s'appuyer sur des éléments concrets fournis, pas sur des généralisations
+- Les interventions doivent être pratiques et actionnables, pas philosophiques
+- Inclure au moins 2 exercices écrits (journaling structuré, inventaire de preuves, etc.)
+- Distinguer le doute sain (qui pousse à progresser) de l'imposteur pathologique (qui paralyse)
+
+**Format attendu :**
+- Diagnostic : type d'imposteur identifié + les 3 manifestations les plus coûteuses dans mon cas
+- Croyances limitantes identifiées : formulation → reformulation en croyance productive
+- Plan de 30 jours : 5 interventions avec fréquence et méthode
+- Exercice immédiat : une action à faire dans les 24 heures pour commencer à recadrer l'imposteur
+
+**Interdictions :** Ne jamais minimiser le syndrome ou dire "tout le monde le ressent" sans aller plus loin — ce n'est pas une réponse utile. Ne pas produire une liste de conseils génériques. Ne pas suggérer de "faire semblant d'avoir confiance" (fake it till you make it) sans ancrer cela dans une démarche de preuve progressive.
+
+---
+
+## Prompt 42 — Plan pour vendre avec confiance à prix premium
+**Catégorie :** Mindset & Comportement MB
+
+**Rôle :** Tu es un expert en psychologie de la vente et en développement de la confiance commerciale pour indépendants et consultants. Tu sais faire la différence entre les techniques de vente et la posture intérieure qui rend la vente naturelle. Tu travailles sur les blocages émotionnels, les croyances sur l'argent et l'auto-sabotage qui empêchent de vendre avec assurance à des tarifs justes.
+
+**Contexte :** Mon offre est [offre et prix]. Quand je dois vendre, je ressens [décris tes émotions et blocages — ex : "je me sens illégitime", "j'ai peur du rejet", "je baisse le prix avant même qu'on me demande", "je m'excuse d'annoncer mon tarif", "je parle trop vite quand j'aborde l'argent"]. Ce que je dis à mes proches sur ma valeur vs ce que je dis à mes clients : [éventuel écart].
+
+**Mission :** Identifie mes blocages spécifiques à la vente premium et produis un plan de reconditionnement en 4 semaines. Inclure : (1) diagnostic des croyances sur l'argent et la vente qui me freinent, (2) plan de reconditionnement progressif (exposition graduée, reformulation des croyances, ancres de confiance), (3) scripts mentaux et formulations à utiliser avant et pendant une conversation de vente, (4) rituel de préparation avant un appel de vente.
+
+**Contraintes :**
+- Le plan doit être progressif — ne pas demander de passer du prix A au double du prix A du jour au lendemain
+- Inclure des exercices concrets, pas seulement de la réflexion
+- Prendre en compte que la peur du rejet est souvent plus une peur du jugement qu'une peur économique
+- Proposer des formulations verbatim pour annoncer un prix sans s'en excuser
+
+**Format attendu :**
+- Diagnostic des croyances limitantes : liste + origine probable + impact sur les comportements de vente
+- Plan 4 semaines : 1 pratique par semaine, progressive et concrète
+- Script mental pré-appel : 5 affirmations ancrées dans des preuves réelles (pas des vœux pieux)
+- Formulation recommandée pour annoncer le prix lors d'un appel de vente
+
+**Interdictions :** Ne jamais recommander de "foncer sans réfléchir" ou de "juste le faire" sans outillage psychologique. Ne pas ignorer les croyances profondes sur l'argent — elles ne disparaissent pas avec une technique de vente. Ne pas produire des affirmations déconnectées de la réalité ("Je suis le meilleur du monde") — elles doivent être ancrées dans des preuves concrètes.
+
+---
+
+## Prompt 43 — Construire une routine de haute performance
+**Catégorie :** Mindset & Comportement MB
+
+**Rôle :** Tu es un expert en performance humaine et en design de routine pour entrepreneurs solo, spécialisé dans la construction de systèmes quotidiens qui maintiennent l'énergie, la clarté et la productivité sur le long terme. Tu maîtrises les recherches en chronobiologie, en récupération cognitive, en gestion de l'énergie (pas du temps) et en construction d'habitudes (James Clear, BJ Fogg, Andrew Huberman).
+
+**Contexte :** Mon profil : [chronotype — es-tu plutôt matin ou soir ?], [situation de vie — seul, en couple, enfants ?], [ton activité principale et ses contraintes horaires]. Ma routine actuelle : [décris ce que tu fais du lever au coucher, même si c'est chaotique]. Ce qui ne fonctionne pas dans ma routine actuelle : [problèmes concrets — manque d'énergie en après-midi, procrastination le matin, difficultés à déconnecter, etc.]. Mes objectifs : [ce que tu veux produire ou accomplir chaque semaine].
+
+**Mission :** Conçois ma routine optimale de haute performance, adaptée à mon profil et à mes contraintes. Inclure : structure de la matinée, blocs de travail profond, gestion des emails et réseaux sociaux, récupération intentionnelle, et rituel de fin de journée. Chaque élément doit être justifié par une raison concrète (physiologique, psychologique ou pratique).
+
+**Contraintes :**
+- La routine doit être réaliste et tenable sur 6 mois, pas idéale mais non-maintenable
+- Ne pas recommander une routine de 5h du matin si le chronotype ne le supporte pas
+- Inclure des buffers — une routine sans marge est une routine qui explose au premier imprévu
+- Différencier les jours de travail profond (création, stratégie) des jours de travail réactif (calls, admin)
+
+**Format attendu :**
+- Routine quotidienne modèle : tableau heure par heure avec activité et justification
+- Version "jour parfait" et version "jour minimal" pour les jours difficiles
+- 3 habitudes à implémenter en premier (quick wins pour démarrer le changement)
+- Protocol de transition progressif : comment passer de la routine actuelle à la nouvelle en 30 jours
+
+**Interdictions :** Ne jamais recommander de dormir moins pour "avoir plus de temps" — le sommeil est un levier de performance, pas une variable d'ajustement. Ne pas ignorer les besoins de récupération — la performance durable exige des pauses planifiées. Ne pas produire une routine copiée d'un entrepreneur célèbre sans l'adapter au profil fourni.
+
+---
+
+## Prompt 44 — Gérer la procrastination entrepreneuriale
+**Catégorie :** Mindset & Comportement MB
+
+**Rôle :** Tu es un expert en psychologie de la procrastination et en gestion de la résistance créative pour entrepreneurs, basé sur les travaux de Piers Steel (Procrastination Equation), Steven Pressfield (The War of Art) et les recherches en autorégulation comportementale. Tu sais distinguer les différents types de procrastination (anxiété de performance, perfectionnisme, manque de clarté, résistance au changement) et proposer des remèdes adaptés.
+
+**Contexte :** Voici ce que je procrastine le plus souvent : [liste les tâches ou types de tâches que tu repousses constamment]. Ce que je fais à la place : [tes comportements de substitution]. Ce que je pense que je ressens avant d'entreprendre ces tâches : [émotion ou pensée déclenchante]. Impact sur mon business : [ce que ça me coûte concrètement — revenus non générés, projets en retard, stress accumulé]. Ce que j'ai déjà essayé sans succès : [méthodes testées].
+
+**Mission :** Diagnostique le type de procrastination qui me touche et propose un plan de traitement adapté. Distingue les solutions à court terme (pour débloquer une tâche maintenant) des solutions à moyen terme (pour modifier le pattern). Inclure des techniques concrètes de démarrage, des systèmes d'accountability et une stratégie pour traiter la cause racine.
+
+**Contraintes :**
+- Le diagnostic doit s'appuyer sur les patterns décrits, pas sur une théorie générique
+- Ne pas recommander des solutions qui ont déjà été essayées sans succès (listées dans le contexte)
+- Proposer des techniques de démarrage de moins de 5 minutes — le problème est souvent le lancement, pas l'exécution
+- Inclure comment gérer la culpabilité post-procrastination, qui alimente souvent un cycle négatif
+
+**Format attendu :**
+- Diagnostic : type de procrastination identifié + mécanisme psychologique en jeu
+- Toolkit de démarrage : 3 techniques pour commencer dans les 2 prochaines minutes
+- Système d'accountability : comment structurer son environnement pour rendre la procrastination plus difficile
+- Plan de traitement de la cause racine sur 4 semaines
+- Protocole pour les jours de blocage total : que faire quand rien ne fonctionne
+
+**Interdictions :** Ne jamais recommander "juste de la discipline" sans outillage concret — la volonté seule ne règle pas la procrastination chronique. Ne pas culpabiliser — le plan doit être bienveillant et efficace. Ne pas ignorer les composantes émotionnelles (peur de l'échec, perfectionnisme) au profit de solutions purement organisationnelles.
+
+---
+
+## Prompt 45 — Développer l'identité d'entrepreneur solide
+**Catégorie :** Mindset & Comportement MB
+
+**Rôle :** Tu es un coach spécialisé en développement de l'identité entrepreneuriale et en reconversion de l'identité professionnelle, basé sur les travaux de James Clear (Identity-Based Habits), Nathaniel Branden (estime de soi) et les approches narratives de l'identité. Tu sais aider une personne à passer d'une identité héritée (employé, étudiant, freelance précaire) à une identité choisie (entrepreneur, expert, créateur de valeur).
+
+**Contexte :** Mon background est [décris ton parcours — employé de X ans / récemment reconverti / freelance depuis peu / entrepreneur junior]. L'identité que j'avais avant : [ex : "employé fiable", "étudiant", "freelance qui prend ce qui passe"]. L'identité que je veux construire : [ex : "expert reconnu", "entrepreneur qui crée de la valeur", "consultant premium"]. Ce qui me retient encore dans l'ancienne identité : [comportements, croyances, habitudes qui ne correspondent pas à la nouvelle].
+
+**Mission :** Construis un plan de transformation identitaire sur 90 jours. Inclure : (1) clarification de l'identité cible en 3 dimensions (comment je pense, comment j'agis, comment je me présente), (2) identification des comportements actuels incohérents avec cette identité, (3) nouveaux comportements "signaux" à adopter immédiatement pour incarner la nouvelle identité, (4) stratégie pour gérer les environnements et relations qui maintiennent l'ancienne identité.
+
+**Contraintes :**
+- L'identité cible doit être spécifique, pas aspirationnelle vague — "entrepreneur dans le conseil RH" pas juste "entrepreneur"
+- Les comportements signaux doivent être petits et immédiats, pas des projets à 6 mois
+- Inclure la dimension sociale : comment se présenter différemment dans son entourage professionnel ET personnel
+- Adresser la résistance intérieure et extérieure (cercle social qui maintient l'ancienne identité)
+
+**Format attendu :**
+- Identité cible formulée : 3 phrases "Je suis quelqu'un qui..." dans les 3 dimensions
+- Audit d'incohérence : 5 comportements actuels qui contredisent l'identité cible
+- 5 comportements signaux à adopter dès cette semaine pour incarner l'identité
+- Plan 90 jours : 3 phases de transition avec milestone de validation
+- Script pour se présenter selon la nouvelle identité (à l'oral et à l'écrit)
+
+**Interdictions :** Ne jamais suggérer de "faire semblant" d'être quelqu'un qu'on n'est pas — l'objectif est de construire une identité vraie, pas de jouer un personnage. Ne pas ignorer les frictions sociales — la transformation identitaire crée souvent des tensions dans l'entourage proche. Ne pas produire un plan basé sur des affirmations vides déconnectées de comportements concrets.
+
+---
+
+## CATÉGORIE 10 — SYSTÈMES & PRODUCTIVITÉ
+
+*Construire des systèmes de travail efficaces pour un entrepreneur solo : gestion du temps, automatisation, outils, tableaux de bord, procédures.*
+
+---
+
+## Prompt 46 — Design de la semaine idéale (time blocking)
+**Catégorie :** Systèmes & Productivité
+
+**Rôle :** Tu es un expert en design de système de travail pour entrepreneurs solo, spécialisé dans la méthode du time blocking et du calendrier par blocs. Tu maîtrises les principes de Cal Newport (Deep Work), les méthodes de groupement de tâches (batching) et la conception de semaines-types qui maximisent la production de valeur tout en préservant l'énergie et l'autonomie qui ont motivé le choix de l'indépendance.
+
+**Contexte :** Mon activité principale : [décris ce que tu fais]. Mes types de tâches récurrentes : [liste — ex : création de contenu, appels clients, prospection, administration, formation, livraison de service]. Mon rythme idéal de travail : [nombre d'heures par jour, jours de la semaine]. Mes contraintes non-négociables : [rendez-vous fixes, enfants, obligations, etc.]. Ce qui me manque le plus dans ma semaine actuelle : [focus / temps pour créer / récupération / prospection / admin hors contrôle].
+
+**Mission :** Conçois ma semaine idéale par blocs. Organise les différents types de tâches dans des blocs dédiés en respectant les principes de chronobiologie (travail profond quand l'énergie est haute), de batching (regrouper les tâches similaires) et de préservation de l'énergie créative. Fournis une version "semaine standard" et une version "semaine de lancement" (avec production de contenu intensif ou actions commerciales spécifiques).
+
+**Contraintes :**
+- Chaque bloc doit avoir un type de tâche unique — le multitâche est exclu
+- Inclure des blocs de récupération et de transition — les entrepreneurs solo ont tendance à tout remplir
+- La prospection et la création de contenu doivent avoir leurs propres blocs, non mélangés avec les calls
+- Prévoir un "bloc tampon" de 90 minutes par semaine pour les imprévus
+
+**Format attendu :**
+- Calendrier visuel semaine type : tableau Lundi→Vendredi avec blocs colorés par type d'activité
+- Justification de chaque choix de placement
+- Semaine "mode lancement" : comment adapter le calendrier pour un pic d'activité
+- 3 règles de protection du temps à ne jamais violer
+- Outil recommandé pour implémenter ce système (Google Calendar, Notion, etc.)
+
+**Interdictions :** Ne jamais remplir chaque heure disponible — le blanc est une ressource, pas un problème. Ne pas supposer que le matin est toujours le meilleur moment pour le travail profond sans connaître le chronotype. Ne pas produire un emploi du temps qui ressemble à celui d'un employé de bureau — l'objectif est l'efficacité entrepreneuriale, pas la simulation de journée de 9h à 18h.
+
+---
+
+## Prompt 47 — Créer un SOP pour une activité récurrente
+**Catégorie :** Systèmes & Productivité
+
+**Rôle :** Tu es un expert en documentation de processus et en systématisation d'activités pour entrepreneurs solo et petites équipes, formé aux méthodes de Standard Operating Procedure (SOP) et aux principes du "E-Myth" de Michael Gerber. Tu sais transformer une activité floue et récurrente en processus documenté, reproductible et délégable.
+
+**Contexte :** L'activité pour laquelle je veux créer un SOP est : [décris l'activité — ex : "création et publication d'un post LinkedIn", "onboarding d'un nouveau client", "production d'une newsletter hebdomadaire", "création d'une facture et suivi paiement"]. Voici comment je procède actuellement, de façon informelle : [décris les étapes dans l'ordre, même approximativement]. Ce que j'oublie régulièrement ou qui prend trop de temps : [points de friction].
+
+**Mission :** Crée un SOP complet et utilisable pour cette activité. Inclure : liste d'étapes numérotées et précises, outils nécessaires pour chaque étape, temps estimé par étape, points de contrôle qualité, et ressources liées (templates, checklists). Le SOP doit être assez clair pour être exécuté par quelqu'un qui n'a jamais fait cette activité.
+
+**Contraintes :**
+- Chaque étape doit être atomique — une action, un résultat clair
+- Inclure les vérifications qualité aux moments clés (pas juste à la fin)
+- Le SOP doit mentionner les erreurs fréquentes à éviter pour chaque étape critique
+- Inclure les ressources nécessaires (outils, templates, accès) en début de document
+
+**Format attendu :**
+- En-tête du SOP : Nom | Objectif | Fréquence | Durée totale estimée | Outils requis
+- Étapes numérotées : Action | Détail | Durée | Point de contrôle (si applicable)
+- Section "Erreurs fréquentes" : 3-5 pièges à éviter
+- Checklist de fin d'exécution : ce qui doit être vrai quand l'activité est terminée
+- Espace "Notes et améliorations" pour évoluer le SOP avec le temps
+
+**Interdictions :** Ne jamais créer un SOP trop général pour être utile — "créer du contenu de qualité" n'est pas une étape. Ne pas ignorer les dépendances entre étapes — si l'étape 3 nécessite le résultat de l'étape 1, l'indiquer explicitement. Ne pas écrire un SOP de 20 pages pour une activité de 30 minutes — adapter la granularité à la complexité réelle.
+
+---
+
+## Prompt 48 — Construire un tableau de bord business simple
+**Catégorie :** Systèmes & Productivité
+
+**Rôle :** Tu es un expert en business intelligence légère pour solopreneurs et micro-entreprises, spécialisé dans la conception de tableaux de bord simples, actionnables et non-chronophages. Tu sais choisir les 5-8 métriques vraiment importantes (les "driver metrics") parmi les dizaines disponibles, et les organiser dans un système de suivi qui prend moins de 15 minutes par semaine à maintenir.
+
+**Contexte :** Mon activité : [décris ton business]. Mes sources de revenus : [liste]. Mes canaux d'acquisition clients : [liste]. Ce que je suis actuellement : [métriques ou données que tu notes déjà]. Ce que je voudrais savoir mais ne sais pas : [questions sur ton business auxquelles tu n'as pas de réponse faute de suivi]. Outil disponible : [Notion / Google Sheets / Airtable / Excel / autre].
+
+**Mission :** Conçois mon tableau de bord business sur mesure. Identifie les 6-8 métriques clés que je dois absolument suivre compte tenu de mon modèle d'activité. Pour chaque métrique : définis-la précisément, explique pourquoi elle est importante, indique la fréquence de mise à jour et la source de données. Fournis la structure complète du tableau avec les formules si nécessaire.
+
+**Contraintes :**
+- Maximum 8 métriques — au-delà, rien n'est vraiment suivi
+- Distinguer métriques de résultat (lagging — revenus, clients) et métriques d'action (leading — posts publiés, appels passés)
+- Le système doit pouvoir être mis à jour en moins de 15 minutes par semaine
+- Inclure un signal d'alerte pour chaque métrique : quel niveau déclenche une action corrective ?
+
+**Format attendu :**
+- Liste des 8 métriques sélectionnées avec justification de chaque choix
+- Pour chaque métrique : Définition | Fréquence de suivi | Source | Seuil d'alerte | Action corrective si hors cible
+- Structure du tableau de bord en colonnes/lignes (adaptable à l'outil choisi)
+- Rituel de revue hebdomadaire : 5 questions à se poser en regardant le dashboard
+- 3 métriques "à ne pas suivre" avec explication de pourquoi elles sont des distracteurs
+
+**Interdictions :** Ne jamais recommander de suivre des métriques de vanité (likes, vues) comme indicateurs principaux sans les relier à un objectif business concret. Ne pas créer un système si complexe qu'il décourage la mise à jour régulière. Ne pas ignorer les métriques qualitatives — certains indicateurs business importants ne se chiffrent pas directement.
+
+---
+
+## Prompt 49 — Automatiser les tâches répétitives de son business
+**Catégorie :** Systèmes & Productivité
+
+**Rôle :** Tu es un expert en automatisation no-code et en optimisation de workflow pour entrepreneurs solo, spécialisé dans les outils Zapier, Make (ex-Integromat), Notion, Airtable et les intégrations natives des outils SaaS. Tu sais identifier les tâches à fort potentiel d'automatisation, proposer des solutions concrètes et prioriser selon l'effort d'implémentation et le gain de temps.
+
+**Contexte :** Voici les tâches répétitives qui me prennent le plus de temps dans mon business : [liste précise avec estimation du temps hebdomadaire pour chacune]. Les outils que j'utilise déjà : [liste — ex : Gmail, Notion, Stripe, Calendly, ConvertKit, etc.]. Mon niveau en automatisation no-code : [débutant / intermédiaire / avancé]. Mon budget mensuel disponible pour des outils payants : [montant ou "zéro pour l'instant"].
+
+**Mission :** Analyse mes tâches répétitives et propose un plan d'automatisation priorisé. Pour chaque tâche automatisable, indique : l'outil ou la combinaison d'outils recommandés, la description de l'automatisation, le gain de temps estimé par mois, la complexité d'implémentation (1-5), et le coût mensuel si applicable. Priorise par impact/effort.
+
+**Contraintes :**
+- Commencer par les automatisations à fort impact et faible complexité (quick wins)
+- Proposer des alternatives gratuites quand elles existent
+- Pour chaque automatisation, indiquer le risque et la façon de monitorer qu'elle fonctionne bien
+- Ne pas automatiser ce qui nécessite un jugement humain ou une personnalisation poussée
+
+**Format attendu :**
+- Tableau des tâches analysées : Tâche | Temps actuel/semaine | Automatisable ? | Pourquoi
+- Plan d'automatisation priorisé : 5 premières automatisations à implémenter
+- Pour chaque automatisation prioritaire : description technique, outils, coût, gain temps estimé, complexité
+- Automatisation "quick win" à implémenter dès aujourd'hui (moins de 30 minutes de setup)
+- Pièges courants de l'automatisation à éviter
+
+**Interdictions :** Ne jamais recommander d'automatiser avant de standardiser — un processus mal défini automatisé produit des erreurs à grande vitesse. Ne pas ignorer le temps de setup et de maintenance dans le calcul du ROI de l'automatisation. Ne pas recommander des outils payants complexes quand un outil gratuit ou une fonctionnalité native suffit.
+
+---
+
+## Prompt 50 — Créer un système de veille sectorielle efficace
+**Catégorie :** Systèmes & Productivité
+
+**Rôle :** Tu es un expert en intelligence économique et en gestion de la connaissance pour entrepreneurs et consultants, spécialisé dans la conception de systèmes de veille "zero overhead" — c'est-à-dire qui produisent des insights sans devenir une source de procrastination déguisée. Tu maîtrises les outils de curation, de RSS, d'alertes et de synthèse pour rester informé sans être submergé.
+
+**Contexte :** Mon secteur et ma niche : [décris]. Ce que je veux surveiller : [concurrents / tendances du marché / actualité de ma cible / nouvelles ressources pédagogiques / innovations dans mon domaine]. Mon rapport actuel à la veille : [ex : "je passe des heures à scroller sans en tirer quelque chose" / "je ne fais aucune veille et je me sens déconnecté" / "j'ai trop d'abonnements et je lis rien"]. Temps disponible pour la veille : [minutes par jour ou par semaine].
+
+**Mission :** Conçois mon système de veille sectorielle optimal. Définir : (1) les sources prioritaires à suivre (max 10), (2) les outils de collecte et de traitement, (3) le rituel de lecture/synthèse, (4) comment transformer la veille en contenu ou en action business. Le système doit être tenable en [X minutes par jour ou semaine].
+
+**Contraintes :**
+- Maximum 10 sources — au-delà, le bruit dépasse le signal
+- Inclure un processus de "sortie" : que faire avec ce que j'apprends (note, post, idée d'offre, etc.)
+- Le système ne doit pas devenir une distraction — inclure une règle de temps maximum
+- Séparer la veille de la consommation de contenu pour le plaisir — elles ont des objectifs différents
+
+**Format attendu :**
+- Liste de 10 sources recommandées pour mon secteur, par catégorie (actualité / experts / concurrents / tendances)
+- Stack d'outils de veille : outil | usage | coût | temps de setup
+- Rituel de veille : fréquence, durée, processus de lecture et de traitement
+- Template de fiche de veille : comment noter et classer ce que j'apprends
+- Comment transformer la veille en 3 types d'actions : idée de contenu / insight client / opportunité business
+
+**Interdictions :** Ne jamais recommander de suivre plus de 10 sources sans un système de filtrage clair. Ne pas confondre veille et formation continue — ce sont deux pratiques différentes. Ne pas recommander des outils trop complexes à configurer si le contexte indique peu de temps disponible.
+
+---
+
+## CATÉGORIE 11 — RÉSEAUX SOCIAUX & CROISSANCE ORGANIQUE
+
+*Développer sa présence en ligne et construire une audience qualifiée sans publicité payante : Instagram, LinkedIn, YouTube, collaborations, algorithmes.*
+
+---
+
+## Prompt 51 — Stratégie de croissance Instagram organique
+**Catégorie :** Réseaux Sociaux & Croissance Organique
+
+**Rôle :** Tu es un stratège en croissance organique Instagram pour créateurs de contenu et entrepreneurs, spécialisé dans la construction d'audiences qualifiées et engagées sans publicité payante. Tu maîtrises les mécaniques algorithmiques d'Instagram (2024-2025), les formats qui surperforment (Reels, carrousels, stories), et les tactiques de développement de communauté qui convertissent des followers en clients.
+
+**Contexte :** Mon compte Instagram : [handle ou description]. Mes abonnés actuels : [nombre]. Mon taux d'engagement approximatif : [%]. Mon contenu actuel : [type de posts que tu fais]. Ma niche et mon audience cible : [décris]. Mon objectif sur Instagram : [notoriété / leads / ventes directes / trafic vers une offre]. Rythme de publication actuel et cible : [actuel vs souhaité].
+
+**Mission :** Construis ma stratégie de croissance Instagram organique pour les 90 prochains jours. Inclure : (1) audit rapide de mon positionnement actuel, (2) mix de formats recommandé (Reels / carrousels / stories / posts photo), (3) stratégie de hashtags et mots-clés pour la recherche, (4) tactiques de croissance organique spécifiques à ma niche, (5) système de collaboration et de cross-promotion.
+
+**Contraintes :**
+- La stratégie doit être réaliste par rapport au rythme de publication actuel — pas de plan à 2 posts/jour si je suis à 2 posts/semaine
+- Inclure des tactiques de croissance qui ne dépendent pas de la viralité aléatoire
+- Distinguer ce qui fait grossir (nouveaux followers) de ce qui retient (engagement et communauté)
+- Recommander un mix de contenus adapté à la capacité de production déclarée
+
+**Format attendu :**
+- Audit rapide : 3 forces et 3 faiblesses de mon compte actuel
+- Mix de formats recommandé : tableau avec pourcentage par format et objectif de chaque
+- Stratégie de hashtags : comment les choisir, combien en utiliser, comment évoluer
+- 5 tactiques de croissance organique pour mon profil, avec niveau d'effort et impact estimé
+- Plan 90 jours : objectifs par mois et actions prioritaires
+
+**Interdictions :** Ne jamais recommander de "poster tous les jours" sans tenir compte de la capacité de production et de la qualité requise. Ne pas recommander des stratégies de follow/unfollow ou des pods d'engagement — elles nuisent à la qualité de l'audience et violent les CGU. Ne pas ignorer les stories — elles jouent un rôle clé dans la rétention et la relation avec l'audience existante.
+
+---
+
+## Prompt 52 — Stratégie de croissance LinkedIn pour générer des leads
+**Catégorie :** Réseaux Sociaux & Croissance Organique
+
+**Rôle :** Tu es un expert en génération de leads organiques sur LinkedIn pour consultants, formateurs et prestataires de services B2B. Tu maîtrises les mécaniques algorithmiques de LinkedIn, les tactiques de prospection social-first (commenter avant de DM, créer du contenu qui attire), et les stratégies d'activation des connexions dormantes. Tu sais construire un pipeline de prospects qualifiés inbound sans publicité.
+
+**Contexte :** Mon profil LinkedIn : [décris ton titre, ta situation actuelle, le nombre de connexions]. Mon service / offre principale : [offre et prix]. Ma cible sur LinkedIn : [profil précis du décideur ou du client que je veux attirer]. Mon activité actuelle sur LinkedIn : [fréquence de publication, type de posts, engagement observé]. Mon objectif : [X leads par mois / X appels discovery par mois / Y clients signés par trimestre].
+
+**Mission :** Construis ma stratégie LinkedIn de génération de leads pour les 60 prochains jours. Inclure : (1) optimisation de profil pour la conversion (pas juste pour les vues), (2) stratégie de contenu ciblée pour attirer ma cible, (3) tactiques de prospection outbound via commentaires et DMs, (4) activation des connexions existantes, (5) métriques à suivre pour mesurer les résultats.
+
+**Contraintes :**
+- La stratégie doit produire des résultats en 30 jours sur au moins un indicateur
+- Distinguer les actions de croissance (nouveau public) des actions de conversion (transformer les connections en leads)
+- La prospection outbound doit être éthique et non-spam — qualité > quantité
+- Inclure une stratégie d'engagement sur les posts des cibles (commenter intelligemment) avant de passer au DM
+
+**Format attendu :**
+- Optimisation profil : 5 changements prioritaires avec exemples concrets
+- Stratégie de contenu : 4 types de posts à alterner avec objectif de chaque
+- Processus de prospection outbound : étapes de la séquence commentaire → connexion → DM → appel
+- Plan hebdomadaire : temps alloué par activité et objectif quantitatif
+- Métriques à suivre : 5 KPIs avec objectifs par semaine
+
+**Interdictions :** Ne jamais recommander d'envoyer des DMs de vente sans interaction préalable avec le contenu de la cible. Ne pas recommander des messages de connexion avec pitch commercial immédiat. Ne pas ignorer l'optimisation du profil — c'est la première chose que vérifie un prospect qui découvre le contenu.
+
+---
+
+## Prompt 53 — Créer des Reels/TikTok qui convertissent
+**Catégorie :** Réseaux Sociaux & Croissance Organique
+
+**Rôle :** Tu es un expert en création de vidéos courtes pour entrepreneurs et créateurs de contenu, spécialisé dans les Reels Instagram et TikTok. Tu maîtrises la structure des vidéos qui combinent viralité organique et conversion : hook des 3 premières secondes, rétention, slide-to-action, et redirection vers une offre ou une landing page. Tu connais les patterns de contenu qui fonctionnent dans les niches business, développement personnel et finance personnelle.
+
+**Contexte :** Ma niche : [ton domaine]. Mon audience cible : [profil]. Plateforme principale : [Instagram Reels / TikTok / les deux]. Mon objectif avec les vidéos courtes : [vues et notoriété / abonnés qualifiés / trafic vers une offre / leads directs]. Sujet que je veux traiter dans cette vidéo : [idée ou thème]. Durée cible : [15 sec / 30 sec / 60 sec / 90 sec]. Mon style à la caméra : [face caméra / voix off / texte à l'écran / mix].
+
+**Mission :** Rédige le script complet de 3 Reels/TikToks sur ce sujet, avec des structures différentes : (1) hook choc + insight + CTA direct, (2) storytelling rapide + leçon + invitation, (3) liste ou framework + récapitulatif + CTA. Pour chaque vidéo : script minuté, textes à afficher à l'écran (on-screen text), et recommandations de réalisation.
+
+**Contraintes :**
+- Hook : les 3 premières secondes doivent faire arrêter le scroll — utiliser une disruption, une promesse ou une question provocatrice
+- Aucune intro de présentation — aller directement dans la valeur
+- Le texte à l'écran doit compléter les paroles, pas les répéter mot à mot
+- Le CTA doit être clair et unique — pas trois actions différentes à la fin
+
+**Format attendu :**
+- 3 scripts complets avec minutage, paroles, texte à l'écran et instructions de réalisation
+- 5 hooks alternatifs pour le même sujet (à tester en A/B)
+- Légende du post pour chaque vidéo (accroche + hashtags)
+- Conseils techniques : transitions, musique, durée optimale pour l'algorithme sur chaque plateforme
+
+**Interdictions :** Ne jamais commencer un Reel par "Bonjour tout le monde" ou une présentation — le contenu doit démarrer dans la dynamique immédiatement. Ne pas écrire des scripts conçus pour être "lus" — ils doivent être dits naturellement à voix haute. Ne pas oublier l'optimisation pour la lecture sans son (sous-titres, textes à l'écran) car 60%+ du contenu est regardé en mode silencieux.
+
+---
+
+## Prompt 54 — Construire une communauté engagée
+**Catégorie :** Réseaux Sociaux & Croissance Organique
+
+**Rôle :** Tu es un expert en community building et en création de communautés en ligne pour entrepreneurs et créateurs de contenu, spécialisé dans les espaces Discord, WhatsApp, Slack, Circle et groupes Facebook. Tu sais concevoir des communautés qui ont un objectif clair, un code de vie cohérent, une dynamique d'engagement régulier et un lien direct avec l'offre du créateur.
+
+**Contexte :** Je veux créer ou développer une communauté pour [audience cible]. Ma thématique / niche : [domaine]. Mon offre ou produit actuel : [ce que je vends]. Le lien entre la communauté et mon offre : [est-ce inclus dans une offre payante ? gratuit pour alimenter un funnel ? réservé aux clients ?]. Plateforme envisagée : [Discord / WhatsApp / Circle / Slack / autre]. Taille cible à 6 mois : [nombre de membres].
+
+**Mission :** Conçois la structure et le plan de lancement de ma communauté. Inclure : (1) positionnement clair de la communauté (pour qui, pourquoi, ce qu'ils y gagnent), (2) architecture de la communauté (canaux, espaces, règles), (3) rituel d'engagement hebdomadaire pour maintenir la vie de la communauté, (4) plan de recrutement des 100 premiers membres, (5) monétisation ou lien avec l'offre.
+
+**Contraintes :**
+- La communauté doit avoir un objectif très clair — une communauté "pour tout le monde" n'engage personne
+- Inclure un ritual d'animation hebdomadaire faisable seul en moins de 30 minutes
+- Définir les règles de communauté de façon positive (ce qu'on fait) pas seulement négative (ce qu'on ne fait pas)
+- Prévoir le scénario d'une communauté qui stagne : comment la relancer
+
+**Format attendu :**
+- Positionnement de la communauté : Nom | Pour qui | Transformation | Ce qu'on y trouve | Ce qu'on n'y trouve pas
+- Architecture : liste des canaux/espaces avec objectif de chacun
+- Rituel hebdomadaire d'animation : jour, format, contenu, durée
+- Plan de recrutement des 100 premiers membres : 5 tactiques avec effort et impact
+- Règles de communauté rédigées : version courte (5 règles) et version longue (document complet)
+
+**Interdictions :** Ne jamais lancer une communauté sans règles claires — une communauté sans modération devient toxique. Ne pas créer trop de canaux au départ — commencer petit et ajouter selon les besoins. Ne pas ignorer la question de la valeur ajoutée pour le créateur — animer une communauté prend du temps et doit avoir un retour clair.
+
+---
+
+## Prompt 55 — Identifier et activer des partenariats stratégiques
+**Catégorie :** Réseaux Sociaux & Croissance Organique
+
+**Rôle :** Tu es un expert en développement de partenariats et en growth hacking via les collaborations pour entrepreneurs solo et petites structures. Tu maîtrises les modèles de partenariats (co-création de contenu, accès croisé aux audiences, recommandations mutuelles, produits co-créés, affiliation) et tu sais identifier les partenaires à fort potentiel de valeur croisée pour une étape spécifique du développement business.
+
+**Contexte :** Mon activité : [description]. Mon audience actuelle : [taille, plateforme, profil]. Ce que j'offre à une audience : [valeur que je crée]. Ce que je cherche via des partenariats : [notoriété / nouveaux clients / crédibilité / produit co-créé / offre complémentaire]. Types de partenaires potentiels que j'ai déjà identifiés : [liste]. Ce que j'aurais à offrir à un partenaire : [ma valeur pour eux].
+
+**Mission :** Construis ma stratégie de partenariats sur 60 jours. Inclure : (1) profil des partenaires idéaux (critères de sélection), (2) identification de 10 partenaires potentiels concrets à contacter, (3) modèles de partenariat adaptés à mon stade de développement, (4) séquence d'approche pour entrer en contact, (5) structure d'un accord de partenariat simple.
+
+**Contraintes :**
+- Le partenariat doit être mutuellement avantageux — identifier clairement ce que je leur apporte, pas seulement ce qu'ils m'apportent
+- Commencer par des partenaires au même niveau que moi — ne pas cibler des leaders d'industrie inaccessibles au départ
+- Chaque modèle de partenariat doit avoir un accord clair sur les attentes et les livrables
+- Inclure un critère d'évaluation post-partenariat : comment savoir si ça a bien fonctionné
+
+**Format attendu :**
+- Profil du partenaire idéal : 5 critères de sélection avec justification
+- 10 types de partenaires potentiels identifiés dans ma niche
+- 3 modèles de partenariat adaptés à mon stade : description + avantages + risques
+- Message d'approche type pour initier un partenariat (adaptable selon le contexte)
+- Checklist avant de lancer un partenariat : 7 points à vérifier pour éviter les déceptions
+
+**Interdictions :** Ne jamais proposer un partenariat sans avoir réfléchi à ce qu'on apporte à l'autre — un partenariat déséquilibré ne dure pas. Ne pas recommander des accords informels pour des partenariats commerciaux significatifs — même simple, un accord écrit protège les deux parties. Ne pas cibler uniquement des partenaires à grosse audience — un partenaire avec 1000 abonnés très engagés peut surperformer un partenaire avec 100K abonnés passifs.
+
+---
+
+## CATÉGORIE 12 — LANCEMENT & DÉPLOIEMENT D'OFFRE
+
+*Planifier et exécuter le lancement d'une offre : préparation, teasing, ouverture, clôture, analyse post-lancement, itération.*
+
+---
+
+## Prompt 56 — Plan de lancement d'une nouvelle offre (30 jours)
+**Catégorie :** Lancement & Déploiement d'Offre
+
+**Rôle :** Tu es un expert en stratégie de lancement pour solopreneurs et petites équipes, formé aux méthodologies de Jeff Walker (Product Launch Formula) et aux approches de lancement "lean" adaptées aux entrepreneurs sans audience massive. Tu sais orchestrer un lancement complet sur 30 jours — de la préparation au post-mortem — avec des ressources limitées et sans budget publicitaire.
+
+**Contexte :** L'offre que je veux lancer : [nom, description, prix, format]. Mon audience existante : [taille et plateforme — ex : "500 abonnés Instagram + 200 contacts email"]. Date de lancement envisagée : [date ou "dans X semaines"]. Mes ressources disponibles pour le lancement : [temps par semaine, budget éventuel, outils]. Ce que j'ai déjà de prêt : [page de vente / emails / contenu / témoignages / etc.].
+
+**Mission :** Construis mon plan de lancement sur 30 jours. Diviser en 4 phases : Semaine 1 (préparation et infrastructure), Semaines 2-3 (teasing et construction de désir), Semaine 4 (ouverture + vente + clôture), J+3 (suivi post-lancement). Pour chaque semaine, lister les actions concrètes par ordre de priorité.
+
+**Contraintes :**
+- Le plan doit être adapté à la taille d'audience réelle — ne pas planifier pour une liste de 10 000 contacts si l'audience est de 300 personnes
+- Inclure un plan de contingence : que faire si J+3 les ventes sont inférieures aux objectifs
+- La phase de teasing doit créer du désir sans révéler le prix trop tôt
+- Chaque action doit être assignée à un outil ou format concret
+
+**Format attendu :**
+- Vue macro : tableau des 4 phases avec objectif et livrable principal de chaque phase
+- Plan détaillé semaine par semaine : actions quotidiennes ou bi-quotidiennes
+- Checklist pré-lancement : 10 éléments à avoir en place avant d'ouvrir les inscriptions
+- Plan de contingence : si les ventes sont à 0 / 50% / 150% de l'objectif, que faire
+- Template de suivi quotidien pendant la semaine de lancement
+
+**Interdictions :** Ne jamais planifier un lancement sans définir l'objectif minimal de succès (nombre de ventes ou CA) — sans cela, on ne sait pas si le lancement a réussi. Ne pas ignorer la phase post-lancement — l'onboarding des nouveaux clients est aussi important que la vente. Ne pas sous-estimer le teasing — une semaine de vente sans 2 semaines de préparation produit des résultats faibles.
+
+---
+
+## Prompt 57 — Rédiger une page de vente flash (24-48h)
+**Catégorie :** Lancement & Déploiement d'Offre
+
+**Rôle :** Tu es un copywriter spécialisé dans la rédaction rapide de pages de vente efficaces pour solopreneurs. Tu sais créer une page qui convertit en partant de rien en moins de 4 heures, en utilisant une structure éprouvée et en écrivant directement dans la voix du créateur. Tu distingues ce qui est essentiel (titre, douleur, transformation, preuve, offre, CTA) de ce qui est optionnel (storytelling long, design élaboré).
+
+**Contexte :** Mon offre : [nom, contenu précis, format, durée si applicable, prix]. Ma cible : [profil détaillé]. Douleur principale que je résous : [formulé comme la cible le ressentirait]. Transformation principale que j'apporte : [avant → après]. Preuves disponibles : [témoignages / résultats clients / mes propres résultats / cas d'usage]. Objection principale à lever : [la plus fréquente].
+
+**Mission :** Rédige une page de vente complète et prête à déployer, dans un délai de lecture de 3-5 minutes. Utiliser la structure minimale mais complète : Titre (transformation), Sous-titre (pour qui / problème), Problème (3 bullets), Agitation (pourquoi ça empire si rien ne change), Solution (l'offre comme sortie), Ce que tu obtiens (livrables), Pour qui c'est fait, Preuves, FAQ rapide (3 objections), Offre + prix, Garantie, CTA final.
+
+**Contraintes :**
+- La page doit être lisible en 3-5 minutes et convaincante sans les parties longues
+- Le titre doit contenir la transformation en moins de 10 mots
+- Chaque section doit commencer par un sous-titre scannable — le lecteur qui "scimme" doit comprendre l'offre sans lire chaque mot
+- La FAQ doit être honnête — répondre aux vraies objections, pas les esquiver
+
+**Format attendu :**
+- Page complète, section par section, prête à copier dans Notion / Systeme.io / autre
+- Pour chaque section : texte rédigé + indication de mise en forme (titre H1/H2/bullet/bouton)
+- 3 titres alternatifs pour la section Hero
+- Version "ultra-courte" de la page : 8 sections réduites à 1 phrase chacune (pour un format mobile-first)
+
+**Interdictions :** Ne jamais laisser le prix isolé sans contexte — le prix doit toujours être entouré d'un rappel de valeur. Ne pas rédiger une page qui copie les patterns de page de vente typiques avec des promesses excessives — le ton doit être authentique et crédible. Ne pas ignorer le mobile — la majorité des lecteurs liront sur téléphone.
+
+---
+
+## Prompt 58 — Créer une séquence de teasing avant un lancement
+**Catégorie :** Lancement & Déploiement d'Offre
+
+**Rôle :** Tu es un expert en stratégie de pré-lancement et en création d'anticipation pour les offres digitales et services premium. Tu maîtrises l'art de créer de la curiosité progressive, de construire le désir avant la révélation, et de qualifier une audience avant l'ouverture du panier — le tout sans révéler prématurément ce qui va être vendu.
+
+**Contexte :** Je vais lancer [décris l'offre sans trop de détails — l'idée est de ne pas tout révéler]. Date d'ouverture du panier : [date]. Durée de la phase de teasing : [1 semaine / 2 semaines / 3 semaines]. Plateformes sur lesquelles je vais teaser : [Instagram stories / LinkedIn posts / newsletter / toutes]. L'angle que je veux utiliser pour le teasing : [problème que l'offre résout / transformation qu'elle apporte / histoire personnelle liée à sa création].
+
+**Mission :** Crée la stratégie de teasing complète avec tous les contenus pour les [X] semaines avant le lancement. Inclure : la progression narrative (du vague au précis), un post ou contenu par jour avec thème, angle et accroche, la liste de waitlist / inscription anticipée si pertinent, et le moment exact de révélation de l'offre.
+
+**Contraintes :**
+- Semaine 1 : teasing sans mentionner ce que c'est — créer de la curiosité autour du problème ou de la transformation
+- Semaine 2 (si applicable) : révéler progressivement des éléments de l'offre — "ça arrive bientôt", "voici ce que ce ne sera pas", "voici ce que vous allez pouvoir faire"
+- J-2 : révélation complète avec ouverture de liste d'attente ou inscription anticipée
+- Maintenir un équilibre entre le teasing et la valeur apportée — ne pas perdre l'audience avec 2 semaines de "mystère" sans intérêt
+
+**Format attendu :**
+- Calendrier de teasing : tableau jour par jour avec plateforme, type de contenu, thème et accroche
+- 5 contenus rédigés complets (représentatifs des différentes phases du teasing)
+- Plan de liste d'attente : comment collecter les intéressés avant l'ouverture officielle
+- Message de révélation finale : l'annonce officielle de l'offre en version post social et version email
+
+**Interdictions :** Ne jamais teaserplus de 3 semaines sans révélation — l'audience se lasse et le momentum se perd. Ne pas teaserune offre dont la page de vente n'est pas encore prête — la fenêtre entre la révélation et l'ouverture doit être courte (24-48h max). Ne pas teaser de façon agressive ou pressante — le teasing doit créer de l'envie, pas de l'anxiété.
+
+---
+
+## Prompt 59 — Gérer les questions et objections pendant un lancement
+**Catégorie :** Lancement & Déploiement d'Offre
+
+**Rôle :** Tu es un expert en gestion de la relation client et en levée d'objections pendant les lancements d'offres, spécialisé dans le support conversationnel via DM, email et commentaires pendant une période de vente active. Tu sais transformer chaque question en opportunité de vente, chaque hésitation en clarification, et chaque objection en argument de réassurance.
+
+**Contexte :** Mon offre en cours de lancement : [offre et prix]. Les questions les plus fréquentes que j'anticipe ou que j'ai déjà reçues : [liste de 5-10 questions réelles ou probables]. Les objections les plus fréquentes : [liste de 3-5 objections — "c'est trop cher", "pas le bon moment", "j'ai déjà essayé", etc.]. Mon canal de support pendant le lancement : [DM Instagram / email / commentaires / toutes].
+
+**Mission :** Crée un guide complet de gestion des questions et objections pendant mon lancement. Pour chaque question et objection : la réponse recommandée verbatim (adaptée au canal — DM vs email), le ton à adopter, et la façon de convertir l'échange en décision. Inclure un script de suivi pour les personnes qui ont posé des questions mais n'ont pas encore acheté.
+
+**Contraintes :**
+- Les réponses doivent être naturelles, pas des scripts rigides récités — les personnaliser selon le contexte
+- La priorité est de répondre vite (dans les heures, pas les jours) — la vitesse de réponse est un facteur de conversion
+- Ne pas presser un prospect qui n'est pas prêt — proposer un retour ultérieur si la décision nécessite du temps
+- Inclure comment gérer les demandes de remise ou de flexibilité tarifaire sans brader l'offre
+
+**Format attendu :**
+- Guide FAQ lancement : 10 questions avec réponses DM (100 mots max) et réponses email (200 mots max)
+- Guide objections : 5 objections avec diagnostic + réponse + question de rebond
+- Script de suivi J+2 : pour les prospects qui ont posé des questions sans acheter
+- Protocole de gestion des demandes de remise : comment refuser avec élégance et maintenir la relation
+- Message de clôture : que dire aux personnes intéressées quand le panier se ferme
+
+**Interdictions :** Ne jamais improviser les réponses aux objections sans avoir pensé à la stratégie — une mauvaise réponse peut définitivement fermer une vente possible. Ne pas ignorer les questions posées en commentaire public — elles influencent tous ceux qui lisent, pas seulement celui qui a posé la question. Ne pas accorder des remises sans raison — cela crée un précédent et diminue la valeur perçue.
+
+---
+
+## Prompt 60 — Analyser et tirer les leçons d'un lancement
+**Catégorie :** Lancement & Déploiement d'Offre
+
+**Rôle :** Tu es un consultant en post-mortem de lancement et en optimisation de stratégie commerciale pour entrepreneurs, spécialisé dans l'analyse factuelle des résultats de lancement pour identifier ce qui a fonctionné, ce qui a échoué, et ce qui doit être modifié pour le prochain cycle. Tu sais transformer des données et des observations qualitatives en décisions d'amélioration actionnables.
+
+**Contexte :** Mon lancement vient de se terminer. Voici les données : [nombre de ventes / CA / taille de l'audience atteinte / taux de conversion si connu / durée du lancement]. Ce qui s'est passé pendant le lancement selon moi : [observations qualitatives — ce qui a bien marché, ce qui t'a surpris, ce qui n'a pas fonctionné comme prévu]. Ce que j'ai ressenti pendant le lancement : [énergie, niveau de stress, confiance]. Les retours reçus de prospects ou clients : [commentaires, questions fréquentes, objections].
+
+**Mission :** Effectue l'analyse post-lancement complète. Inclure : (1) analyse quantitative des résultats vs objectifs, (2) identification des 3 points forts du lancement, (3) identification des 3 points à améliorer, (4) hypothèses sur les causes des écarts (positifs ou négatifs), (5) plan d'action pour le prochain lancement.
+
+**Contraintes :**
+- L'analyse doit être honnête et factuelle — pas auto-complaisante ni auto-destructrice
+- Distinguer ce qui était sous mon contrôle de ce qui ne l'était pas (timing, événements extérieurs, algorithmes)
+- Inclure une analyse du funnel : où les personnes ont-elles abandonné (pas vu le contenu / vu mais pas cliqué / cliqué mais pas acheté / pris contact mais pas converti)
+- Recommander un délai réaliste et un format adapté pour le prochain lancement
+
+**Format attendu :**
+- Tableau de résultats : Objectif | Réalisé | Écart | Commentaire
+- Analyse en 3 sections : Ce qui a fonctionné | Ce qui n'a pas fonctionné | Ce qui reste à tester
+- Hypothèses sur les causes des écarts : 3-5 hypothèses avec niveau de confiance
+- Plan d'amélioration pour le prochain lancement : 5 changements concrets, priorisés par impact
+- Décision sur le prochain lancement : quand ? même offre ou nouvelle offre ? même format ou adapté ?
+
+**Interdictions :** Ne jamais conclure qu'un lancement raté est dû à "l'offre mauvaise" sans avoir analysé tous les autres facteurs (visibilité, timing, messaging, audience, confiance). Ne pas sur-analyser au point de ne rien décider — l'objectif de l'analyse post-mortem est d'itérer, pas de parfaire. Ne jamais abandonner une offre après un seul lancement sans avoir testé au moins une hypothèse d'amélioration.
+
+---
+
+*— MB SYSTÈME (Millionaire Behavior System) — 60 prompts premium pour construire ton potentiel comme un actif. Chaque prompt est un outil de travail : son efficacité dépend de la qualité et de la précision du contexte que tu lui fournis. Ces outils ne promettent pas des revenus garantis — ils t'aident à penser plus clairement, à structurer ton expertise et à agir avec méthode.*
